@@ -1,0 +1,128 @@
+$color1: #010102d8;
+$color2: #a09efc;
+$color3: #e896ea; //used
+$color4: #a1c7ff; //used
+$color5: #a46da9;
+$color6: #4e3d5d;
+$color7: #9f415c; //used
+$color8: #f3f7fc; //used
+
+body {
+  padding: 2rem;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  //background-color: $color1;
+  background: url(https://i.gifer.com/HKVW.gif);
+  header {
+    width: 100%;
+    height: 95vh;
+    text-align: center;
+    //background: url(./img/top4.jpg);
+    //background: url(https://media.giphy.com/media/11fHSR7hmRLbkA/giphy.gif);
+    background: url(https://i.gifer.com/XSdv.gif);
+    background-size: cover;
+    // clip-path: polygon(100% 0, 100% 72%, 41% 100%, 0% 100%, 0 50%, 0% 0%);
+    clip-path: polygon(100% 0, 100% 74%, 49% 100%, 25% 87%, 0 74%, 0% 0%);
+    .logo {
+      font-family: "UnifrakturMaguntia", cursive;
+      text-align: left;
+      font-size: 4rem;
+      color: $color7;
+      padding-left: 1rem;
+      padding-top: 0.5rem;
+    }
+    .title {
+      h1 {
+        font-size: 5rem;
+        color: $color8;
+        text-transform: uppercase;
+        font-family: "Train One", cursive;
+      }
+      p {
+        font-size: 2rem;
+        font-weight: bold;
+        color: $color8;
+        text-transform: uppercase;
+      }
+      .btn {
+        width: 15vw;
+        font-size: 2rem;
+        border-radius: 50vw;
+        padding: 0.5rem 1.5rem;
+        margin-top: 2rem;
+        //background: linear-gradient(to right, $color7, $color3, $color4);
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 0.2em 0.3em $color7;
+        color: $color7;
+        border: 0.1rem solid $color7;
+        &:active {
+          box-shadow: none;
+          transform: translateY(0.2rem);
+        }
+      }
+      .aboutBtn {
+        margin-left: 2rem;
+        margin-right: 2rem;
+      }
+    }
+  }
+  .container {
+    width: 100%;
+    height: 95vh;
+    text-align: center;
+    color: $color8;
+    h2 {
+      //margin-top: 2rem;
+    }
+  }
+  .about {
+    background-color: $color4;
+    clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 0);
+  }
+  .skills {
+    background-color: $color3;
+    clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 25%);
+    background: url(./img/top4.jpg);
+    background-size: cover;
+    &::before {
+      //not working
+      content: "";
+      background: inherit;
+      position: absolute;
+      z-index: -1;
+      filter: blur(5px);
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+    }
+  }
+  .work {
+    background-color: $color4;
+  }
+  footer {
+    width: 100%;
+    background-color: $color7;
+    color: $color8;
+    text-align: center;
+    .logo {
+      a {
+        font-family: "UnifrakturMaguntia", cursive;
+        font-size: 4rem;
+        padding-left: 1rem;
+        padding-top: 0.5rem;
+        color: $color8;
+        text-decoration: none;
+      }
+    }
+    .links {
+      a {
+        text-decoration: none;
+        color: $color8;
+        padding-left: 2rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
