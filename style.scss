@@ -1,18 +1,23 @@
 $color1: #010102d8;
 $color2: #a09efc;
 $color3: #e896ea; //used
+$color3grad: #e996eac0; //used
+$color4grad: #a1c7ffb9; //used
 $color4: #a1c7ff; //used
 $color5: #a46da9;
-$color6: #4e3d5d;
+$color6: #4e3d5d; //used
 $color7: #9f415c; //used
 $color8: #f3f7fc; //used
+$bgColor1: #f3f7fc9e;
 
 body {
   padding: 2rem;
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
   //background-color: $color1;
+  // background:linear-gradient($bgColor1), url(https://i.gifer.com/HKVW.gif);
   background: url(https://i.gifer.com/HKVW.gif);
+  /* header */
   header {
     width: 100%;
     height: 95vh;
@@ -21,8 +26,7 @@ body {
     //background: url(https://media.giphy.com/media/11fHSR7hmRLbkA/giphy.gif);
     background: url(https://i.gifer.com/XSdv.gif);
     background-size: cover;
-    // clip-path: polygon(100% 0, 100% 72%, 41% 100%, 0% 100%, 0 50%, 0% 0%);
-    clip-path: polygon(100% 0, 100% 74%, 49% 100%, 25% 87%, 0 74%, 0% 0%);
+    //clip-path: polygon(100% 0, 100% 74%, 49% 100%, 25% 87%, 0 74%, 0% 0%);
     .logo {
       font-family: "UnifrakturMaguntia", cursive;
       text-align: left;
@@ -51,7 +55,7 @@ body {
         padding: 0.5rem 1.5rem;
         margin-top: 2rem;
         //background: linear-gradient(to right, $color7, $color3, $color4);
-        background: rgba(255, 255, 255, 0.8);
+        background: #f3f7fcc8;
         box-shadow: 0 0.2em 0.3em $color7;
         color: $color7;
         border: 0.1rem solid $color7;
@@ -66,41 +70,93 @@ body {
       }
     }
   }
+
+  /* main all */
   .container {
     width: 100%;
     height: 95vh;
     text-align: center;
     color: $color8;
     h2 {
-      //margin-top: 2rem;
+      padding-top: 3rem;
+      font-size: 3rem;
+      text-transform: uppercase;
     }
   }
+
+  /* about */
   .about {
-    background-color: $color4;
-    clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 0);
-  }
-  .skills {
+    clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
     background-color: $color3;
-    clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 25%);
-    background: url(./img/top4.jpg);
+  }
+
+  /* skills */
+  .skills {
+    position: relative;
+    background-color: lightblue;
+    background: linear-gradient(to right bottom, $color4grad, $color3grad), url(./img/top4.jpg);
     background-size: cover;
-    &::before {
-      //not working
-      content: "";
-      background: inherit;
-      position: absolute;
-      z-index: -1;
-      filter: blur(5px);
-      position: absolute;
-      top: -2px;
-      left: -2px;
-      right: -2px;
-      bottom: -2px;
+    transform: skewY(5deg);
+    // &::before {
+    //   content: "";
+    //   background: inherit;
+    //   position: absolute;
+    //   z-index: -1;
+    //   filter: blur(5px);
+    //   position: absolute;
+    //   top: -2px;
+    //   left: -2px;
+    //   right: -2px;
+    //   bottom: -2px;
+    // }
+    h2 {
+      transform: skewY(-5deg);
+    }
+    .row {
+      display: flex;
+      justify-content: center;
+      font-size: 2rem;      
+      transform: skewY(-5deg);
+      margin: auto;
+      .panel {
+        width: 20vw;
+        background-color: $bgColor1;
+        margin: 2rem;
+        padding: 1rem;
+        border-radius: 5%;
+        p {
+          text-transform: uppercase;
+          color: $color6;
+        }
+        .border {
+        width: 50%;
+        height: 0.1rem;
+        margin: 2rem auto;
+        background-color: $color7;
+        }
+        i {
+          font-size: 2em;
+        }
+        ul {
+          color: $color6;
+          font-size: 1.5rem;
+          list-style: none;
+          padding-left: 0;
+        }
+      }
     }
   }
+
+  /* work */
   .work {
     background-color: $color4;
+    clip-path: polygon(100% 20%, 100% 100%, 0 100%, 0 0%);
+    h2 {
+      padding-top: 6rem;
+    }
   }
+
+  /* footer */
   footer {
     width: 100%;
     background-color: $color7;
