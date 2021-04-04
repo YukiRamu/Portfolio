@@ -10,6 +10,13 @@ $color7: #9f415c; //used
 $color8: #f3f7fc; //used
 $bgColor1: #f3f7fc9e;
 
+@mixin centering {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 100%;
+}
 body {
   padding: 2rem;
   font-family: "Roboto", sans-serif;
@@ -36,6 +43,7 @@ body {
       padding-top: 0.5rem;
     }
     .title {
+      @include centering;
       h1 {
         font-size: 5rem;
         color: $color8;
@@ -73,6 +81,7 @@ body {
 
   /* main all */
   .container {
+    position: relative;
     width: 100%;
     height: 95vh;
     text-align: center;
@@ -92,7 +101,6 @@ body {
 
   /* skills */
   .skills {
-    position: relative;
     background-color: lightblue;
     background: linear-gradient(to right bottom, $color4grad, $color3grad), url(./img/top4.jpg);
     background-size: cover;
@@ -113,10 +121,11 @@ body {
       transform: skewY(-5deg);
     }
     .row {
+      @include centering;
+      transform: translate(-50%, -50%) skewY(-5deg);
       display: flex;
       justify-content: center;
-      font-size: 2rem;      
-      transform: skewY(-5deg);
+      font-size: 2rem;
       margin: auto;
       .panel {
         width: 20vw;
@@ -129,10 +138,10 @@ body {
           color: $color6;
         }
         .border {
-        width: 50%;
-        height: 0.1rem;
-        margin: 2rem auto;
-        background-color: $color7;
+          width: 50%;
+          height: 0.1rem;
+          margin: 2rem auto;
+          background-color: $color7;
         }
         i {
           font-size: 2em;
@@ -154,6 +163,41 @@ body {
     h2 {
       padding-top: 6rem;
     }
+    .line {
+      @include centering;
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem; ///大画面でWorkの上が切れる
+      .card {
+        background-color: lightcoral;
+        margin: 1rem;
+        min-width: 20vw;
+        border-radius: 5%;
+        .card_title {
+          background-color: lightgreen;
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+          padding: 2rem;
+          border-top-left-radius: 70%;
+          border-top-right-radius: 10%;
+          h3 {
+            font-size: 1.5rem;
+            margin-left: auto;
+            text-align: right;
+          }
+        }
+        .techStack {
+          list-style: none;
+          margin: auto;
+          padding: 1.5rem 2rem 2rem;
+          width: 60%;
+          li {
+            border-bottom: 0.1rem groove $color6;
+            font-size: 1.2rem;
+            padding: 0.5rem;
+          }
+        }
+      }
+    }
   }
 
   /* footer */
@@ -173,6 +217,7 @@ body {
       }
     }
     .links {
+      padding-bottom: 1rem;
       a {
         text-decoration: none;
         color: $color8;

@@ -28,6 +28,15 @@ body header .logo {
   padding-top: 0.5rem;
 }
 
+body header .title {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 100%;
+}
+
 body header .title h1 {
   font-size: 5rem;
   color: #f3f7fc;
@@ -68,6 +77,7 @@ body header .title .aboutBtn {
 }
 
 body .container {
+  position: relative;
   width: 100%;
   height: 95vh;
   text-align: center;
@@ -87,7 +97,6 @@ body .about {
 }
 
 body .skills {
-  position: relative;
   background-color: lightblue;
   background: -webkit-gradient(linear, left top, right bottom, from(#a1c7ffb9), to(#e996eac0)), url(./img/top4.jpg);
   background: linear-gradient(to right bottom, #a1c7ffb9, #e996eac0), url(./img/top4.jpg);
@@ -102,6 +111,14 @@ body .skills h2 {
 }
 
 body .skills .row {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%) skewY(-5deg);
+          transform: translate(-50%, -50%) skewY(-5deg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,8 +126,6 @@ body .skills .row {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 2rem;
-  -webkit-transform: skewY(-5deg);
-          transform: skewY(-5deg);
   margin: auto;
 }
 
@@ -155,6 +170,57 @@ body .work h2 {
   padding-top: 6rem;
 }
 
+body .work .line {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+}
+
+body .work .line .card {
+  background-color: lightcoral;
+  margin: 1rem;
+  min-width: 20vw;
+  border-radius: 5%;
+}
+
+body .work .line .card .card_title {
+  background-color: lightgreen;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+  padding: 2rem;
+  border-top-left-radius: 70%;
+  border-top-right-radius: 10%;
+}
+
+body .work .line .card .card_title h3 {
+  font-size: 1.5rem;
+  margin-left: auto;
+  text-align: right;
+}
+
+body .work .line .card .techStack {
+  list-style: none;
+  margin: auto;
+  padding: 1.5rem 2rem 2rem;
+  width: 60%;
+}
+
+body .work .line .card .techStack li {
+  border-bottom: 0.1rem groove #4e3d5d;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
 body footer {
   width: 100%;
   background-color: #9f415c;
@@ -169,6 +235,10 @@ body footer .logo a {
   padding-top: 0.5rem;
   color: #f3f7fc;
   text-decoration: none;
+}
+
+body footer .links {
+  padding-bottom: 1rem;
 }
 
 body footer .links a {
