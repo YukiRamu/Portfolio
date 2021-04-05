@@ -9,6 +9,8 @@ $color6: #4e3d5d; //used
 $color7: #9f415c; //used
 $color8: #f3f7fc; //used
 $bgColor1: #f3f7fc9e;
+$bgColor2: #fdffbcbc;
+$bgColor3: #ffaf37b0;
 
 @mixin centering {
   position: absolute;
@@ -72,7 +74,7 @@ body {
           transform: translateY(0.2rem);
         }
       }
-      .aboutBtn {
+      .workBtn {
         margin-left: 2rem;
         margin-right: 2rem;
       }
@@ -95,13 +97,12 @@ body {
 
   /* about */
   .about {
+    background: linear-gradient(to right bottom, $color4grad, $bgColor1);
     clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
-    background-color: $color3;
   }
 
   /* skills */
   .skills {
-    background-color: lightblue;
     background: linear-gradient(to right bottom, $color4grad, $color3grad), url(./img/top4.jpg);
     background-size: cover;
     transform: skewY(5deg);
@@ -158,7 +159,7 @@ body {
 
   /* work */
   .work {
-    background-color: $color4;
+    background: linear-gradient(to right bottom, $bgColor1, $color3grad);
     clip-path: polygon(100% 20%, 100% 100%, 0 100%, 0 0%);
     h2 {
       padding-top: 6rem;
@@ -169,21 +170,33 @@ body {
       justify-content: center;
       margin-top: 2rem; ///大画面でWorkの上が切れる
       .card {
-        background-color: lightcoral;
+        background-color: $color8;
+        box-shadow: 0.5em 0.7em 1em $color6;
         margin: 1rem;
         min-width: 20vw;
         border-radius: 5%;
         .card_title {
-          background-color: lightgreen;
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
           padding: 2rem;
-          border-top-left-radius: 70%;
+          border-top-left-radius: 10%;
           border-top-right-radius: 10%;
           h3 {
             font-size: 1.5rem;
             margin-left: auto;
             text-align: right;
           }
+        }
+        .one {
+          background-image:linear-gradient(to right bottom, $bgColor2, $bgColor3), url(./img/img1.jpg);
+          h3 {
+            color: ;
+          }
+        }
+        .two {
+          background-image:linear-gradient(to right bottom, $bgColor2, $bgColor3), url(./img/img1.jpg);
+        }
+        .three {
+          background-image:linear-gradient(to right bottom, $bgColor2, $bgColor3), url(./img/img1.jpg);
         }
         .techStack {
           list-style: none;
@@ -194,6 +207,7 @@ body {
             border-bottom: 0.1rem groove $color6;
             font-size: 1.2rem;
             padding: 0.5rem;
+            color: $color6;
           }
         }
       }

@@ -71,7 +71,7 @@ body header .title .btn:active {
           transform: translateY(0.2rem);
 }
 
-body header .title .aboutBtn {
+body header .title .workBtn {
   margin-left: 2rem;
   margin-right: 2rem;
 }
@@ -91,13 +91,13 @@ body .container h2 {
 }
 
 body .about {
+  background: -webkit-gradient(linear, left top, right bottom, from(#a1c7ffb9), to(#f3f7fc9e));
+  background: linear-gradient(to right bottom, #a1c7ffb9, #f3f7fc9e);
   -webkit-clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
           clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
-  background-color: #e896ea;
 }
 
 body .skills {
-  background-color: lightblue;
   background: -webkit-gradient(linear, left top, right bottom, from(#a1c7ffb9), to(#e996eac0)), url(./img/top4.jpg);
   background: linear-gradient(to right bottom, #a1c7ffb9, #e996eac0), url(./img/top4.jpg);
   background-size: cover;
@@ -161,7 +161,8 @@ body .skills .row .panel ul {
 }
 
 body .work {
-  background-color: #a1c7ff;
+  background: -webkit-gradient(linear, left top, right bottom, from(#f3f7fc9e), to(#e996eac0));
+  background: linear-gradient(to right bottom, #f3f7fc9e, #e996eac0);
   -webkit-clip-path: polygon(100% 20%, 100% 100%, 0 100%, 0 0%);
           clip-path: polygon(100% 20%, 100% 100%, 0 100%, 0 0%);
 }
@@ -187,18 +188,19 @@ body .work .line {
 }
 
 body .work .line .card {
-  background-color: lightcoral;
+  background-color: #f3f7fc;
+  -webkit-box-shadow: 0.5em 0.7em 1em #4e3d5d;
+          box-shadow: 0.5em 0.7em 1em #4e3d5d;
   margin: 1rem;
   min-width: 20vw;
   border-radius: 5%;
 }
 
 body .work .line .card .card_title {
-  background-color: lightgreen;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
   padding: 2rem;
-  border-top-left-radius: 70%;
+  border-top-left-radius: 10%;
   border-top-right-radius: 10%;
 }
 
@@ -206,6 +208,25 @@ body .work .line .card .card_title h3 {
   font-size: 1.5rem;
   margin-left: auto;
   text-align: right;
+}
+
+body .work .line .card .one {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#fdffbcbc), to(#ffaf37b0)), url(./img/img1.jpg);
+  background-image: linear-gradient(to right bottom, #fdffbcbc, #ffaf37b0), url(./img/img1.jpg);
+}
+
+body .work .line .card .one h3 {
+  text-shadow: #ff1500;
+}
+
+body .work .line .card .two {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#fdffbcbc), to(#ffaf37b0)), url(./img/img1.jpg);
+  background-image: linear-gradient(to right bottom, #fdffbcbc, #ffaf37b0), url(./img/img1.jpg);
+}
+
+body .work .line .card .three {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#fdffbcbc), to(#ffaf37b0)), url(./img/img1.jpg);
+  background-image: linear-gradient(to right bottom, #fdffbcbc, #ffaf37b0), url(./img/img1.jpg);
 }
 
 body .work .line .card .techStack {
@@ -219,6 +240,7 @@ body .work .line .card .techStack li {
   border-bottom: 0.1rem groove #4e3d5d;
   font-size: 1.2rem;
   padding: 0.5rem;
+  color: #4e3d5d;
 }
 
 body footer {
