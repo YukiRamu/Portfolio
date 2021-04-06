@@ -1,16 +1,27 @@
-$color1: #010102d8;
-$color2: #a09efc;
-$color3: #e896ea; //used
-$color3grad: #e996eac0; //used
-$color4grad: #a1c7ffb9; //used
+$color1: #f5e63e; //used
+$color2: #42cef5; //used
+$color3: #f57337; //used
 $color4: #a1c7ff; //used
 $color5: #a46da9;
 $color6: #4e3d5d; //used
 $color7: #9f415c; //used
 $color8: #f3f7fc; //used
-$bgColor1: #f3f7fc9e;
-$bgColor2: #fdffbcbc;
-$bgColor3: #ffaf37b0;
+
+$bgColor1: #f3f7fc9e; //used
+$bgColor2: #fdffbcbc; //used
+$bgColor3: #eeae90ca; //used
+$bgColor4: #06070794; //used
+$bgColor5: #3131319c; //used
+$bgColor6: #e9a8ebc0; //used
+$bgColor7: #afccf7b9; //used
+
+$colorTr1: #f5b090ca;
+$colorTr2: #fcd8a1c7;
+$colorTr3: #fff8b1ca;
+$colorTr4: #a5d4add5;
+//$colorTr5: #a3bce2ce;
+$colorTr6: #a59acace;
+$colorTr7: #cfa7cdc8;
 
 @mixin centering {
   position: absolute;
@@ -19,6 +30,12 @@ $bgColor3: #ffaf37b0;
   left: 50%;
   width: 100%;
 }
+
+@mixin threeD {
+  text-shadow: 0.1rem -0.1rem 0.1rem #bdbdbd, -0.1rem 0.2rem 0.1rem #737272, -0.2rem 0.4rem 0.1rem #767474,
+    -0.3rem 0.6rem 0.1rem #787777, -0.4rem 0.8rem 0.1rem #424242;
+}
+
 body {
   padding: 2rem;
   font-family: "Roboto", sans-serif;
@@ -31,11 +48,8 @@ body {
     width: 100%;
     height: 95vh;
     text-align: center;
-    //background: url(./img/top4.jpg);
-    //background: url(https://media.giphy.com/media/11fHSR7hmRLbkA/giphy.gif);
     background: url(https://i.gifer.com/XSdv.gif);
     background-size: cover;
-    //clip-path: polygon(100% 0, 100% 74%, 49% 100%, 25% 87%, 0 74%, 0% 0%);
     .logo {
       font-family: "UnifrakturMaguntia", cursive;
       text-align: left;
@@ -43,6 +57,7 @@ body {
       color: $color7;
       padding-left: 1rem;
       padding-top: 0.5rem;
+      @include threeD;
     }
     .title {
       @include centering;
@@ -56,7 +71,16 @@ body {
         font-size: 2rem;
         font-weight: bold;
         color: $color8;
-        text-transform: uppercase;
+        margin-bottom: 8rem;
+        &:after {
+          @include centering;
+          width: 20%;
+          top: 60%;
+          height: 0.5rem;
+          border-radius: 10vw;
+          content: "";
+          background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+        }
       }
       .btn {
         width: 15vw;
@@ -64,11 +88,13 @@ body {
         border-radius: 50vw;
         padding: 0.5rem 1.5rem;
         margin-top: 2rem;
-        //background: linear-gradient(to right, $color7, $color3, $color4);
         background: #f3f7fcc8;
         box-shadow: 0 0.2em 0.3em $color7;
         color: $color7;
         border: 0.1rem solid $color7;
+        &:hover {
+          transform: translateY(-0.2rem);
+        }
         &:active {
           box-shadow: none;
           transform: translateY(0.2rem);
@@ -92,32 +118,21 @@ body {
       padding-top: 3rem;
       font-size: 3rem;
       text-transform: uppercase;
+      @include threeD;
     }
   }
 
   /* about */
   .about {
-    background: linear-gradient(to right bottom, $color4grad, $bgColor1);
+    background: linear-gradient(to right bottom, $bgColor7, $bgColor1);
     clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
   }
 
   /* skills */
   .skills {
-    background: linear-gradient(to right bottom, $color4grad, $color3grad), url(./img/top4.jpg);
+    background: linear-gradient(to right bottom, $bgColor7, $bgColor6), url(./img/top4.jpg);
     background-size: cover;
     transform: skewY(5deg);
-    // &::before {
-    //   content: "";
-    //   background: inherit;
-    //   position: absolute;
-    //   z-index: -1;
-    //   filter: blur(5px);
-    //   position: absolute;
-    //   top: -2px;
-    //   left: -2px;
-    //   right: -2px;
-    //   bottom: -2px;
-    // }
     h2 {
       transform: skewY(-5deg);
     }
@@ -159,7 +174,7 @@ body {
 
   /* work */
   .work {
-    background: linear-gradient(to right bottom, $bgColor1, $color3grad);
+    background: linear-gradient(to right bottom, $bgColor1, $bgColor6);
     clip-path: polygon(100% 20%, 100% 100%, 0 100%, 0 0%);
     h2 {
       padding-top: 6rem;
@@ -168,46 +183,114 @@ body {
       @include centering;
       display: flex;
       justify-content: center;
-      margin-top: 2rem; ///大画面でWorkの上が切れる
+      margin-top: 2rem; 
       .card {
-        background-color: $color8;
-        box-shadow: 0.5em 0.7em 1em $color6;
-        margin: 1rem;
-        min-width: 20vw;
-        border-radius: 5%;
-        .card_title {
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
-          padding: 2rem;
-          border-top-left-radius: 10%;
-          border-top-right-radius: 10%;
-          h3 {
-            font-size: 1.5rem;
-            margin-left: auto;
-            text-align: right;
+        position: relative;
+        width: 23vw;
+        min-height: 40vh;
+        margin: 2rem;
+        transition: all 0.5s linear;
+        transform-style: preserve-3d;
+        &:hover {
+          transform: perspective(500px) rotateY(180deg); //3d flip
+        }
+        /* card front */
+        .card_front {
+          position: absolute; //for flip
+          width: 100%; //for flip
+          height: 100%; //for flip
+          z-index: 100; //for flip
+          backface-visibility: hidden; //use this together with transform-style: preserve-3d (parent element)
+          background-color: $color8;
+          box-shadow: 0.5em 0.7em 1em $color6;
+          margin: 1rem;
+          border-radius: 5%;
+          .card_title {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+            padding: 3rem 1.5rem;
+            border-top-left-radius: 1vw;
+            border-top-right-radius: 1vw;
+            h3 {
+              padding: 0.5rem;
+              font-size: 1.5rem;
+              border-radius: 10vw;
+              background-image: linear-gradient($bgColor5);
+            }
+          }
+          //card 1
+          .one {
+            background-image: linear-gradient($bgColor2), url(./img/img1.jpg);
+            h3 span {
+              color: $color1;
+            }
+          }
+          //card 2
+          .two {
+            background-image: linear-gradient($bgColor4), url(./img/img2.jpg);
+            h3 span {
+              color: $color2;
+            }
+          }
+          //card 3
+          .three {
+            background-image: linear-gradient($bgColor3), url(./img/img3.jpg);
+            h3 span {
+              color: $color3;
+            }
+          }
+          .techStack {
+            list-style: none;
+            margin: auto;
+            padding: 1.5rem 2rem 2rem;
+            width: 60%;
+            li {
+              border-bottom: 0.1rem groove $color6;
+              font-size: 1.2rem;
+              padding: 0.5rem;
+              color: $color6;
+            }
           }
         }
-        .one {
-          background-image:linear-gradient(to right bottom, $bgColor2, $bgColor3), url(./img/img1.jpg);
-          h3 {
-            color: ;
+        /* card back */
+        .card_back {
+          width: 100%; //for flip
+          height: 100%; //for flip
+          box-shadow: 0.5em 0.7em 1em $color6;
+          margin: 1rem;
+          border-radius: 5%;
+          transform: rotateY(180deg); //to show the back side when flipped
+          &.one_back {
+            background: linear-gradient(#fff8bcfd, #d2f5c6);
           }
-        }
-        .two {
-          background-image:linear-gradient(to right bottom, $bgColor2, $bgColor3), url(./img/img1.jpg);
-        }
-        .three {
-          background-image:linear-gradient(to right bottom, $bgColor2, $bgColor3), url(./img/img1.jpg);
-        }
-        .techStack {
-          list-style: none;
-          margin: auto;
-          padding: 1.5rem 2rem 2rem;
-          width: 60%;
-          li {
-            border-bottom: 0.1rem groove $color6;
-            font-size: 1.2rem;
-            padding: 0.5rem;
+          &.two_back {
+            background: linear-gradient(#bcedfffd, #9090ee);
+          }
+          &.three_back {
+            background: linear-gradient(#f1b565fd, #f18383);
+          }
+          p {
             color: $color6;
+            text-align: justify;
+            padding: 3rem;
+            font-size: 1.2rem;
+          }
+          a {
+            display: block;
+            margin: 1rem auto;
+            padding: 0.5rem 1rem;
+            color: $color5;
+            text-decoration: none;
+            background-color: $color8;
+            box-shadow: 0 0.2em 0.3em $bgColor4;
+            border-radius: 50vw;
+            width: fit-content;
+            &:hover {
+              transform: translateY(-0.2rem);
+            }
+            &:active {
+              transform: translateY(0.2rem);
+              box-shadow: none;
+            }
           }
         }
       }
@@ -228,6 +311,7 @@ body {
         padding-top: 0.5rem;
         color: $color8;
         text-decoration: none;
+        @include threeD;
       }
     }
     .links {
@@ -237,6 +321,9 @@ body {
         color: $color8;
         padding-left: 2rem;
         font-size: 1.5rem;
+        i {
+          margin-right: 0.5rem;
+        }
       }
     }
   }
