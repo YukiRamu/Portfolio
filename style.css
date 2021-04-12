@@ -60,7 +60,7 @@ body header .title p:after {
   left: 50%;
   width: 100%;
   width: 20%;
-  top: 60%;
+  top: 65%;
   height: 0.5rem;
   border-radius: 10vw;
   content: "";
@@ -69,10 +69,10 @@ body header .title p:after {
 }
 
 body header .title .btn {
-  width: 15vw;
-  font-size: 2rem;
+  width: 12vw;
+  font-size: 1.5rem;
   border-radius: 50vw;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 0.5rem;
   margin: 2rem 0.5rem 0 0.5rem;
   background: #f3f7fcc8;
   -webkit-box-shadow: 0 0.2em 0.3em #9f415c;
@@ -109,15 +109,15 @@ body .container h2 {
 }
 
 body .about {
-  background: -webkit-gradient(linear, left top, right bottom, from(#afccf7b9), to(#f3f7fc9e));
-  background: linear-gradient(to right bottom, #afccf7b9, #f3f7fc9e);
+  background: -webkit-gradient(linear, left top, right bottom, from(#afe2f7a3), to(#f3f7fc9e));
+  background: linear-gradient(to right bottom, #afe2f7a3, #f3f7fc9e);
   -webkit-clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
           clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
 }
 
 body .skills {
-  background: -webkit-gradient(linear, left top, right bottom, from(#afccf7b9), to(#e9a8ebc0)), url(./img/top4.jpg);
-  background: linear-gradient(to right bottom, #afccf7b9, #e9a8ebc0), url(./img/top4.jpg);
+  background: -webkit-gradient(linear, left top, right bottom, from(#afe2f7a3), to(#e9a8ebc0)), url(./img/top4.jpg);
+  background: linear-gradient(to right bottom, #afe2f7a3, #e9a8ebc0), url(./img/top4.jpg);
   background-size: cover;
   -webkit-transform: skewY(5deg);
           transform: skewY(5deg);
@@ -153,6 +153,10 @@ body .skills .row .panel {
   margin: 2rem;
   padding: 1rem;
   border-radius: 5%;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
 
 body .skills .row .panel p {
@@ -176,6 +180,11 @@ body .skills .row .panel ul {
   font-size: 1.5rem;
   list-style: none;
   padding-left: 0;
+}
+
+body .skills .row .panel:hover {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
 }
 
 body .work {
@@ -202,7 +211,7 @@ body .work .line {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 body .work .line .card {
@@ -361,18 +370,30 @@ body footer {
   text-align: center;
 }
 
-body footer .logo a {
-  font-family: "UnifrakturMaguntia", cursive;
-  font-size: 4rem;
-  padding-left: 1rem;
-  padding-top: 0.5rem;
-  color: #f3f7fc;
-  text-decoration: none;
+body footer h2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 3rem;
+  text-transform: uppercase;
   text-shadow: 0.1rem -0.1rem 0.1rem #bdbdbd, -0.1rem 0.2rem 0.1rem #737272, -0.2rem 0.4rem 0.1rem #767474, -0.3rem 0.6rem 0.1rem #787777, -0.4rem 0.8rem 0.1rem #424242;
+}
+
+body footer .tel, body footer .mail {
+  text-decoration: none;
+  color: #f3f7fc;
+}
+
+body footer .tel i, body footer .mail i {
+  padding: 0 0.5rem;
+}
+
+body footer .tel:hover, body footer .mail:hover {
+  color: #a46da9;
 }
 
 body footer .links {
   padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 body footer .links a {
@@ -384,5 +405,34 @@ body footer .links a {
 
 body footer .links a i {
   margin-right: 0.5rem;
+}
+
+body footer .links a:hover {
+  color: #a46da9;
+}
+
+body footer .logo a {
+  display: block;
+  font-family: "UnifrakturMaguntia", cursive;
+  font-size: 4rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  color: #f3f7fc;
+  text-decoration: none;
+  text-shadow: 0.1rem -0.1rem 0.1rem #bdbdbd, -0.1rem 0.2rem 0.1rem #737272, -0.2rem 0.4rem 0.1rem #767474, -0.3rem 0.6rem 0.1rem #787777, -0.4rem 0.8rem 0.1rem #424242;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+body footer .logo a:hover {
+  color: #a46da9;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+body footer .credit {
+  padding-bottom: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

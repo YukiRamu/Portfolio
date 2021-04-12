@@ -3,11 +3,12 @@
 const aboutBtn = document.querySelector(".aboutBtn");
 const skillBtn = document.querySelector(".skillBtn");
 const workBtn = document.querySelector(".workBtn");
-const contactBtn = document.querySelector(".workLinkBtn");
+const contactBtn = document.querySelector(".contactBtn");
 //sections
 const aboutSection = document.querySelector(".about");
 const skillSection = document.querySelector(".skills");
 const workSection = document.querySelector(".work");
+const reachMe = document.querySelector(".contact");
 
 /* Function Declaration */
 const smoothScroll = (element) => {
@@ -26,4 +27,8 @@ skillBtn.addEventListener("click", () => {
 
 workBtn.addEventListener("click", () => {
   smoothScroll(workSection);
+});
+
+contactBtn.addEventListener("click", () => {
+  smoothScroll(reachMe);
 });
