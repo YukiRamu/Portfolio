@@ -87,7 +87,7 @@ body {
         font-size: 2rem;
         border-radius: 50vw;
         padding: 0.5rem 1.5rem;
-        margin-top: 2rem;
+        margin: 2rem 0.5rem 0 0.5rem;
         background: #f3f7fcc8;
         box-shadow: 0 0.2em 0.3em $color7;
         color: $color7;
@@ -99,10 +99,6 @@ body {
           box-shadow: none;
           transform: translateY(0.2rem);
         }
-      }
-      .workBtn {
-        margin-left: 2rem;
-        margin-right: 2rem;
       }
     }
   }
@@ -183,7 +179,7 @@ body {
       @include centering;
       display: flex;
       justify-content: center;
-      margin-top: 2rem; 
+      margin-top: 2rem;
       .card {
         position: relative;
         width: 23vw;
@@ -260,10 +256,10 @@ body {
           border-radius: 5%;
           transform: rotateY(180deg); //to show the back side when flipped
           &.one_back {
-            background: linear-gradient(#fff8bcfd, #d2f5c6);
+            background: linear-gradient(#fff8bcfd, #beecaf);
           }
           &.two_back {
-            background: linear-gradient(#bcedfffd, #9090ee);
+            background: linear-gradient(#bcedfffd, #8a8af1);
           }
           &.three_back {
             background: linear-gradient(#f1b565fd, #f18383);
