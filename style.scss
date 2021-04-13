@@ -1,19 +1,21 @@
 $color1: #f5e63e; //used
 $color2: #42cef5; //used
 $color3: #f57337; //used
-$color4: #a1c7ff; //used
-$color5: #a46da9;
-$color6: #4e3d5d; //used
+$color4: #a1ffdb; //used
+$color5: #a46da9; //used
+$color6: #434344; //used
 $color7: #9f415c; //used
 $color8: #f3f7fc; //used
+$color9: #fa709a; //used
 
-$bgColor1: #f3f7fc9e; //used
+$bgColor1: #f3f7fcae; //used
 $bgColor2: #fdffbcbc; //used
 $bgColor3: #eeae90ca; //used
 $bgColor4: #06070794; //used
 $bgColor5: #3131319c; //used
-$bgColor6: #e9a8ebc0; //used
-$bgColor7: #afe2f7a3; //used
+$bgColor6: #b286b4c0; //used
+$bgColor7: #6e9ea3a3;
+$bgColor8: #9f415ca2; //used
 
 $colorTr1: #f5b090ca;
 $colorTr2: #fcd8a1c7;
@@ -79,7 +81,7 @@ body {
           height: 0.5rem;
           border-radius: 10vw;
           content: "";
-          background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+          background-image: linear-gradient(to right, $color9 0%, $color1 100%);
         }
       }
       .btn {
@@ -89,11 +91,12 @@ body {
         padding: 0.5rem 0.5rem;
         margin: 2rem 0.5rem 0 0.5rem;
         background: #f3f7fcc8;
-        box-shadow: 0 0.2em 0.3em $color7;
-        color: $color7;
-        border: 0.1rem solid $color7;
+        box-shadow: 0 0.1em 0.2em $color1;
+        color: $color6;
+        border: 0.1rem solid $color1;
         &:hover {
           transform: translateY(-0.2rem);
+          color: $color9;
         }
         &:active {
           box-shadow: none;
@@ -120,13 +123,86 @@ body {
 
   /* about */
   .about {
-    background: linear-gradient(to right bottom, $bgColor7, $bgColor1);
+    background: linear-gradient(to right bottom, $bgColor8, $bgColor1);
     clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
+    p {
+      font-size: 2rem;
+      width: 70%;
+      margin: 1rem auto;
+    }
+    .careerBtn,
+    .educationBtn {
+      width: 20vw;
+      font-size: 1.5rem;
+      border-radius: 50vw;
+      padding: 0.5rem 0.5rem;
+      margin: 2rem 0.5rem 0 0.5rem;
+      background: $bgColor1;
+      box-shadow: 0 0.2em 0.3em $color7;
+      color: $color7;
+      border: 0.1rem solid $color7;
+      &:hover {
+        transform: translateY(-0.2rem);
+        color: $color9;
+      }
+      &:active {
+        box-shadow: none;
+        transform: translateY(0.2rem);
+      }
+    }
+  }
+  .modal {
+   display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    .modalContents {
+      @include centering;
+      background-color: $color8;
+      width: 80%;
+      padding: 1rem;
+      border-bottom-left-radius: 3vw;
+      border-top-right-radius: 3vw;
+      height: 80vh;
+      text-align: center;
+      h3 {
+        color: $color7;
+        font-size: 3rem;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+      .closeBtn {
+        width: 10vw;
+        font-size: 1.5rem;
+        border-radius: 50vw;
+        padding: 0.5rem 0.5rem;
+        background: $bgColor1;
+        box-shadow: 0 0.2em 0.3em $color7;
+        color: $color7;
+        border: 0.1rem solid $color7;
+        &:hover {
+          transform: translateY(-0.2rem);
+          color: $color6;
+          background: $bgColor8;
+        }
+        &:active {
+          box-shadow: none;
+          transform: translateY(0.2rem);
+        }
+      }
+    }
   }
 
   /* skills */
   .skills {
-    background: linear-gradient(to right bottom, $bgColor7, $bgColor6), url(./img/top4.jpg);
+    background: linear-gradient(to right bottom, $bgColor1, $bgColor6, $bgColor1), url(./img/top4.jpg);
     background-size: cover;
     transform: skewY(5deg);
     h2 {
@@ -145,7 +221,7 @@ body {
         margin: 2rem;
         padding: 1rem;
         border-radius: 5%;
-        transition: transform .3s;
+        transition: transform 0.3s;
         p {
           text-transform: uppercase;
           color: $color6;
@@ -174,7 +250,7 @@ body {
 
   /* work */
   .work {
-    background: linear-gradient(to right bottom, $bgColor1, $bgColor6);
+    background: linear-gradient(to right bottom, $bgColor1, $bgColor8);
     clip-path: polygon(100% 20%, 100% 100%, 0 100%, 0 0%);
     h2 {
       padding-top: 6rem;
@@ -286,6 +362,7 @@ body {
             width: fit-content;
             &:hover {
               transform: translateY(-0.2rem);
+              color: $color9;
             }
             &:active {
               transform: translateY(0.2rem);
@@ -310,7 +387,8 @@ body {
       text-transform: uppercase;
       @include threeD;
     }
-    .tel, .mail{
+    .tel,
+    .mail {
       text-decoration: none;
       color: $color8;
       i {
@@ -346,7 +424,7 @@ body {
         color: $color8;
         text-decoration: none;
         @include threeD;
-        transition: transform .3s;
+        transition: transform 0.3s;
         &:hover {
           color: $color5;
           transform: scale(1.5);

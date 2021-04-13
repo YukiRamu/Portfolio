@@ -64,8 +64,8 @@ body header .title p:after {
   height: 0.5rem;
   border-radius: 10vw;
   content: "";
-  background-image: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#fee140));
-  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#f5e63e));
+  background-image: linear-gradient(to right, #fa709a 0%, #f5e63e 100%);
 }
 
 body header .title .btn {
@@ -75,15 +75,16 @@ body header .title .btn {
   padding: 0.5rem 0.5rem;
   margin: 2rem 0.5rem 0 0.5rem;
   background: #f3f7fcc8;
-  -webkit-box-shadow: 0 0.2em 0.3em #9f415c;
-          box-shadow: 0 0.2em 0.3em #9f415c;
-  color: #9f415c;
-  border: 0.1rem solid #9f415c;
+  -webkit-box-shadow: 0 0.1em 0.2em #f5e63e;
+          box-shadow: 0 0.1em 0.2em #f5e63e;
+  color: #434344;
+  border: 0.1rem solid #f5e63e;
 }
 
 body header .title .btn:hover {
   -webkit-transform: translateY(-0.2rem);
           transform: translateY(-0.2rem);
+  color: #fa709a;
 }
 
 body header .title .btn:active {
@@ -109,15 +110,114 @@ body .container h2 {
 }
 
 body .about {
-  background: -webkit-gradient(linear, left top, right bottom, from(#afe2f7a3), to(#f3f7fc9e));
-  background: linear-gradient(to right bottom, #afe2f7a3, #f3f7fc9e);
+  background: -webkit-gradient(linear, left top, right bottom, from(#9f415ca2), to(#f3f7fcae));
+  background: linear-gradient(to right bottom, #9f415ca2, #f3f7fcae);
   -webkit-clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
           clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
 }
 
+body .about p {
+  font-size: 2rem;
+  width: 70%;
+  margin: 1rem auto;
+}
+
+body .about .careerBtn,
+body .about .educationBtn {
+  width: 20vw;
+  font-size: 1.5rem;
+  border-radius: 50vw;
+  padding: 0.5rem 0.5rem;
+  margin: 2rem 0.5rem 0 0.5rem;
+  background: #f3f7fcae;
+  -webkit-box-shadow: 0 0.2em 0.3em #9f415c;
+          box-shadow: 0 0.2em 0.3em #9f415c;
+  color: #9f415c;
+  border: 0.1rem solid #9f415c;
+}
+
+body .about .careerBtn:hover,
+body .about .educationBtn:hover {
+  -webkit-transform: translateY(-0.2rem);
+          transform: translateY(-0.2rem);
+  color: #fa709a;
+}
+
+body .about .careerBtn:active,
+body .about .educationBtn:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translateY(0.2rem);
+          transform: translateY(0.2rem);
+}
+
+body .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+body .modal .modalContents {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  background-color: #f3f7fc;
+  width: 80%;
+  padding: 1rem;
+  border-bottom-left-radius: 3vw;
+  border-top-right-radius: 3vw;
+  height: 80vh;
+  text-align: center;
+}
+
+body .modal .modalContents h3 {
+  color: #9f415c;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+body .modal .modalContents p {
+  font-size: 1.5rem;
+}
+
+body .modal .modalContents .closeBtn {
+  width: 10vw;
+  font-size: 1.5rem;
+  border-radius: 50vw;
+  padding: 0.5rem 0.5rem;
+  background: #f3f7fcae;
+  -webkit-box-shadow: 0 0.2em 0.3em #9f415c;
+          box-shadow: 0 0.2em 0.3em #9f415c;
+  color: #9f415c;
+  border: 0.1rem solid #9f415c;
+}
+
+body .modal .modalContents .closeBtn:hover {
+  -webkit-transform: translateY(-0.2rem);
+          transform: translateY(-0.2rem);
+  color: #434344;
+  background: #9f415ca2;
+}
+
+body .modal .modalContents .closeBtn:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translateY(0.2rem);
+          transform: translateY(0.2rem);
+}
+
 body .skills {
-  background: -webkit-gradient(linear, left top, right bottom, from(#afe2f7a3), to(#e9a8ebc0)), url(./img/top4.jpg);
-  background: linear-gradient(to right bottom, #afe2f7a3, #e9a8ebc0), url(./img/top4.jpg);
+  background: -webkit-gradient(linear, left top, right bottom, from(#f3f7fcae), color-stop(#b286b4c0), to(#f3f7fcae)), url(./img/top4.jpg);
+  background: linear-gradient(to right bottom, #f3f7fcae, #b286b4c0, #f3f7fcae), url(./img/top4.jpg);
   background-size: cover;
   -webkit-transform: skewY(5deg);
           transform: skewY(5deg);
@@ -149,19 +249,19 @@ body .skills .row {
 
 body .skills .row .panel {
   width: 20vw;
-  background-color: #f3f7fc9e;
+  background-color: #f3f7fcae;
   margin: 2rem;
   padding: 1rem;
   border-radius: 5%;
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 body .skills .row .panel p {
   text-transform: uppercase;
-  color: #4e3d5d;
+  color: #434344;
 }
 
 body .skills .row .panel .border {
@@ -176,7 +276,7 @@ body .skills .row .panel i {
 }
 
 body .skills .row .panel ul {
-  color: #4e3d5d;
+  color: #434344;
   font-size: 1.5rem;
   list-style: none;
   padding-left: 0;
@@ -188,8 +288,8 @@ body .skills .row .panel:hover {
 }
 
 body .work {
-  background: -webkit-gradient(linear, left top, right bottom, from(#f3f7fc9e), to(#e9a8ebc0));
-  background: linear-gradient(to right bottom, #f3f7fc9e, #e9a8ebc0);
+  background: -webkit-gradient(linear, left top, right bottom, from(#f3f7fcae), to(#9f415ca2));
+  background: linear-gradient(to right bottom, #f3f7fcae, #9f415ca2);
   -webkit-clip-path: polygon(100% 20%, 100% 100%, 0 100%, 0 0%);
           clip-path: polygon(100% 20%, 100% 100%, 0 100%, 0 0%);
 }
@@ -240,8 +340,8 @@ body .work .line .card .card_front {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   background-color: #f3f7fc;
-  -webkit-box-shadow: 0.5em 0.7em 1em #4e3d5d;
-          box-shadow: 0.5em 0.7em 1em #4e3d5d;
+  -webkit-box-shadow: 0.5em 0.7em 1em #434344;
+          box-shadow: 0.5em 0.7em 1em #434344;
   margin: 1rem;
   border-radius: 5%;
 }
@@ -297,17 +397,17 @@ body .work .line .card .card_front .techStack {
 }
 
 body .work .line .card .card_front .techStack li {
-  border-bottom: 0.1rem groove #4e3d5d;
+  border-bottom: 0.1rem groove #434344;
   font-size: 1.2rem;
   padding: 0.5rem;
-  color: #4e3d5d;
+  color: #434344;
 }
 
 body .work .line .card .card_back {
   width: 100%;
   height: 100%;
-  -webkit-box-shadow: 0.5em 0.7em 1em #4e3d5d;
-          box-shadow: 0.5em 0.7em 1em #4e3d5d;
+  -webkit-box-shadow: 0.5em 0.7em 1em #434344;
+          box-shadow: 0.5em 0.7em 1em #434344;
   margin: 1rem;
   border-radius: 5%;
   -webkit-transform: rotateY(180deg);
@@ -330,7 +430,7 @@ body .work .line .card .card_back.three_back {
 }
 
 body .work .line .card .card_back p {
-  color: #4e3d5d;
+  color: #434344;
   text-align: justify;
   padding: 3rem;
   font-size: 1.2rem;
@@ -354,6 +454,7 @@ body .work .line .card .card_back a {
 body .work .line .card .card_back a:hover {
   -webkit-transform: translateY(-0.2rem);
           transform: translateY(-0.2rem);
+  color: #fa709a;
 }
 
 body .work .line .card .card_back a:active {
@@ -378,16 +479,19 @@ body footer h2 {
   text-shadow: 0.1rem -0.1rem 0.1rem #bdbdbd, -0.1rem 0.2rem 0.1rem #737272, -0.2rem 0.4rem 0.1rem #767474, -0.3rem 0.6rem 0.1rem #787777, -0.4rem 0.8rem 0.1rem #424242;
 }
 
-body footer .tel, body footer .mail {
+body footer .tel,
+body footer .mail {
   text-decoration: none;
   color: #f3f7fc;
 }
 
-body footer .tel i, body footer .mail i {
+body footer .tel i,
+body footer .mail i {
   padding: 0 0.5rem;
 }
 
-body footer .tel:hover, body footer .mail:hover {
+body footer .tel:hover,
+body footer .mail:hover {
   color: #a46da9;
 }
 
@@ -420,10 +524,10 @@ body footer .logo a {
   color: #f3f7fc;
   text-decoration: none;
   text-shadow: 0.1rem -0.1rem 0.1rem #bdbdbd, -0.1rem 0.2rem 0.1rem #737272, -0.2rem 0.4rem 0.1rem #767474, -0.3rem 0.6rem 0.1rem #787777, -0.4rem 0.8rem 0.1rem #424242;
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 body footer .logo a:hover {
