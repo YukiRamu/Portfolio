@@ -458,7 +458,7 @@ body {
         color: $color8;
         text-decoration: none;
         @include threeD;
-        transition: transform 0.3s;
+        transition: transform 0.3s linear;
         &:hover {
           color: $color5;
           transform: scale(1.5);
