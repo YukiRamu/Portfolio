@@ -46,7 +46,8 @@ body header .title h1 {
 }
 
 body header .title p {
-  font-size: 2rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.5rem;
   font-weight: bold;
   color: #f3f7fc;
   margin-bottom: 8rem;
