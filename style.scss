@@ -1,3 +1,5 @@
+@import "./media";
+
 $color1: #f5e63e; //used
 $color2: #42cef5; //used
 $color3: #f57337; //used
@@ -45,56 +47,138 @@ body {
   //background-color: $color1;
   // background:linear-gradient($bgColor1), url(https://i.gifer.com/HKVW.gif);
   background: url(https://i.gifer.com/HKVW.gif);
-  /* header */
-  header {
-    width: 100%;
-    height: 95vh;
-    text-align: center;
-    background: url(https://i.gifer.com/XSdv.gif);
-    background-size: cover;
-    .logo {
-      font-family: "UnifrakturMaguntia", cursive;
-      text-align: left;
-      font-size: 4rem;
-      color: $color7;
-      padding-left: 1rem;
-      padding-top: 0.5rem;
-      @include threeD;
-    }
-    .title {
-      @include centering;
-      h1 {
-        font-size: 5rem;
-        color: $color8;
-        text-transform: uppercase;
-        font-family: "Train One", cursive;
+  .wrap {
+    overflow: hidden;
+    /* header */
+    header {
+      width: 100%;
+      height: 95vh;
+      text-align: center;
+      background: url(https://i.gifer.com/XSdv.gif) center;
+      background-size: cover;
+      .logo {
+        font-family: "UnifrakturMaguntia", cursive;
+        text-align: left;
+        font-size: 4rem;
+        color: $color7;
+        padding-left: 1rem;
+        padding-top: 0.5rem;
+        @include threeD;
       }
-      p {
-        font-family: 'Dancing Script', cursive;
-        font-size: 3.5rem;
-        font-weight: bold;
-        color: $color8;
-        margin-bottom: 8rem;
-        &:after {
-          @include centering;
-          width: 20%;
-          top: 65%;
-          height: 0.5rem;
-          border-radius: 10vw;
-          content: "";
-          background-image: linear-gradient(to right, $color9 0%, $color1 100%);
+      .title {
+        @include centering;
+        h1 {
+          font-size: 5rem;
+          color: $color8;
+          text-transform: uppercase;
+          font-family: "Train One", cursive;
+          @include mobile {
+            font-size: 2.5rem;
+            margin-top: 2rem;
+          }
+        }
+        p {
+          font-family: "Dancing Script", cursive;
+          font-size: 3.5rem;
+          font-weight: bold;
+          color: $color8;
+          margin-bottom: 8rem;
+          @include mobile {
+            margin-bottom: 6rem;
+            font-size: 2rem;
+          }
+          &:after {
+            @include centering;
+            width: 20%;
+            top: 65%;
+            height: 0.5rem;
+            border-radius: 10vw;
+            content: "";
+            background-image: linear-gradient(to right, $color9 0%, $color1 100%);
+            @include mobile {
+              top: 35%;
+              width: 50%;
+              height: 0.3rem;
+            }
+          }
+        }
+        .btn {
+          width: 12vw;
+          font-size: 1.5rem;
+          border-radius: 50vw;
+          padding: 0.5rem 0.5rem;
+          margin: 2rem 0.5rem 0 0.5rem;
+          background: #f3f7fcc8;
+          box-shadow: 0 0.1em 0.2em $color1;
+          color: $color6;
+          border: 0.1rem solid $color1;
+          @include mobile {
+            width: 30vw;
+            display: block;
+            margin: 2rem auto;
+            font-size: 1rem;
+          }
+          &:hover {
+            transform: translateY(-0.2rem);
+            color: $color9;
+          }
+          &:active {
+            box-shadow: none;
+            transform: translateY(0.2rem);
+          }
         }
       }
-      .btn {
-        width: 12vw;
+    }
+
+    /* main all */
+    .container {
+      position: relative;
+      width: 100%;
+      height: 95vh;
+      text-align: center;
+      color: $color8;
+      h2 {
+        padding-top: 3rem;
+        font-size: 3rem;
+        text-transform: uppercase;
+        @include threeD;
+        @include mobile {
+          padding-top: 7rem;
+          font-size: 2rem;
+        }
+      }
+    }
+
+    /* about */
+    .about {
+      background: linear-gradient(to right bottom, $bgColor8, $bgColor1);
+      clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
+      @include mobile {
+        clip-path: polygon(100% 0, 100% 92%, 0 87%, 0 0);
+      }
+      p {
+        font-size: 2rem;
+        width: 70%;
+        margin: 1rem auto;
+        @include mobile {
+          font-size: 1.5rem;
+        }
+      }
+      .careerBtn,
+      .educationBtn {
+        width: 20vw;
         font-size: 1.5rem;
         border-radius: 50vw;
         padding: 0.5rem 0.5rem;
         margin: 2rem 0.5rem 0 0.5rem;
-        background: #f3f7fcc8;
-        box-shadow: 0 0.1em 0.2em $color1;
-        color: $color6;
-        border: 0.1rem solid $color1;
+        background: $bgColor1;
+        box-shadow: 0 0.2em 0.3em $color7;
+        color: $color7;
+        border: 0.1rem solid $color7;
+        @include mobile {
+          font-size: 1rem;
+          width: 30vw;
+        }
         &:hover {
           transform: translateY(-0.2rem);
           color: $color9;
@@ -105,94 +189,374 @@ body {
         }
       }
     }
-  }
-
-  /* main all */
-  .container {
-    position: relative;
-    width: 100%;
-    height: 95vh;
-    text-align: center;
-    color: $color8;
-    h2 {
-      padding-top: 3rem;
-      font-size: 3rem;
-      text-transform: uppercase;
-      @include threeD;
-    }
-  }
-
-  /* about */
-  .about {
-    background: linear-gradient(to right bottom, $bgColor8, $bgColor1);
-    clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
-    p {
-      font-size: 2rem;
-      width: 70%;
-      margin: 1rem auto;
-    }
-    .careerBtn,
-    .educationBtn {
-      width: 20vw;
-      font-size: 1.5rem;
-      border-radius: 50vw;
-      padding: 0.5rem 0.5rem;
-      margin: 2rem 0.5rem 0 0.5rem;
-      background: $bgColor1;
-      box-shadow: 0 0.2em 0.3em $color7;
-      color: $color7;
-      border: 0.1rem solid $color7;
-      &:hover {
-        transform: translateY(-0.2rem);
-        color: $color9;
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      .modalContents {
+        @include centering;
+        background: linear-gradient($bgColor7), url(./img/top3.jpg);
+        background-size: cover;
+        width: 80%;
+        overflow: scroll;
+        height: 90%;
+        padding: 1rem;
+        text-align: center;
+        h3 {
+          color: $color7;
+          font-size: 3rem;
+          text-transform: uppercase;
+          text-shadow: 0.1rem -0.1rem 0.1rem #e6dbe6, -0.1rem 0.2rem 0.1rem #737272, -0.2rem 0.4rem 0.1rem #9b9898,
+            -0.3rem 0.6rem 0.1rem #929191;
+          @include mobile {
+            font-size: 3rem;
+          }
+        }
+        .modalPanel {
+          text-align: left;
+          margin: 2rem;
+          @include mobile {
+            margin: 1rem;
+          }
+          h4 {
+            font-size: 1.8rem;
+            text-decoration: underline;
+            @include mobile {
+              font-size: 1.3rem;
+            }
+          }
+          p {
+            font-size: 1.3rem;
+            @include mobile {
+              font-size: 1.2rem;
+            }
+          }
+          ul {
+            font-size: 1.2rem;
+            @include mobile {
+              font-size: 1.1rem;
+              padding-left: 2rem;
+            }
+          }
+          a {
+            text-decoration: none;
+            color: $color7;
+            padding-left: 2rem;
+            font-size: 1.5rem;
+            @include mobile {
+              font-size: 1.1rem;
+            }
+            i {
+              margin-right: 0.5rem;
+            }
+            &:hover {
+              color: $color5;
+            }
+          }
+        }
+        .resumeLink {
+          width: 85%;
+          height: 0.1rem;
+          margin: auto;
+          border-radius: 10vw;
+          content: "";
+          background-image: linear-gradient(to right, $color9 0%, $color1 100%);
+        }
+        .closeBtn {
+          width: 10vw;
+          font-size: 1.5rem;
+          border-radius: 50vw;
+          padding: 0.5rem 0.5rem;
+          margin-bottom: 3rem;
+          background: $bgColor1;
+          box-shadow: 0 0.2em 0.3em $color7;
+          color: $color7;
+          border: 0.1rem solid $color7;
+          @include mobile {
+            width: 20vw;
+            font-size: 1.2rem;
+          }
+          &:hover {
+            transform: translateY(-0.2rem);
+            color: $color8;
+            background: $bgColor8;
+          }
+          &:active {
+            box-shadow: none;
+            transform: translateY(0.2rem);
+          }
+        }
       }
-      &:active {
-        box-shadow: none;
-        transform: translateY(0.2rem);
-      }
     }
-  }
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    .modalContents {
-      @include centering;
-      background:linear-gradient($bgColor7), url(./img/top3.jpg);
+
+    /* skills */
+    .skills {
+      background: linear-gradient(to right bottom, $bgColor1, $bgColor6, $bgColor1), url(./img/top4.jpg);
       background-size: cover;
-      width: 80%;
-      overflow: scroll;
-      height: 90%;
-      padding: 1rem;
+      transform: skewY(5deg);
+      h2 {
+        transform: skewY(-5deg);
+        @include mobile {
+          padding-top: 2rem;
+        }
+      }
+      .row {
+        @include centering;
+        transform: translate(-50%, -50%) skewY(-5deg);
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        margin: auto;
+        @include mobile {
+          display: block;
+          transform: skewY(-5deg);
+          position: unset;
+        }
+        .panel {
+          width: 20vw;
+          background-color: $bgColor1;
+          margin: 2rem;
+          padding: 1rem;
+          border-radius: 5%;
+          transition: transform 0.3s;
+          @include mobile {
+            width:70vw;
+            height: 23vh;
+            border-radius: 7vw;
+            margin: 2rem auto;
+          }
+          p {
+            text-transform: uppercase;
+            color: $color6;
+            @include mobile {
+              font-size: 1.5rem;
+            }
+          }
+          .border {
+            width: 50%;
+            height: 0.1rem;
+            margin: 2rem auto;
+            background-color: $color7;
+            @include mobile {
+              margin: 1rem auto;
+            }
+          }
+          i {
+            font-size: 2em;
+            @include mobile {
+              font-size: 1.5em;
+            }
+          }
+          ul {
+            color: $color6;
+            font-size: 1.5rem;
+            list-style: none;
+            padding-left: 0;
+            @include mobile {
+              font-size: 1.3rem;
+            }
+          }
+          &:hover {
+            transform: translateY(-1rem);
+          }
+        }
+      }
+    }
+
+    /* work */
+    .work {
+      background: linear-gradient(to right bottom, $bgColor1, $bgColor8);
+      clip-path: polygon(100% 20%, 100% 100%, 0 100%, 0 0%);
+      @include mobile {
+        clip-path: polygon(100% 12%, 100% 100%, 0 100%, 0 8%);
+      }
+      h2 {
+        padding-top: 6rem;
+        @include mobile {
+          padding-top: 7rem;
+        }
+      }
+      .line {
+        @include centering;
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+        @include mobile {
+          display: block;
+          position: unset;
+          padding-top: 1rem;
+          transform: unset;
+          margin-top: 0;
+        }
+        .card {
+          position: relative;
+          width: 23vw;
+          min-height: 40vh;
+          margin: 2rem;
+          transition: 0.5s;
+          transform-style: preserve-3d;
+          perspective: 600px;
+          @include mobile {
+            width: 70vw;
+            margin: 1rem auto 2rem auto;
+          }
+          &:hover .card_front {
+            transform: rotateX(-180deg); //3d flip
+          }
+          &:hover .card_back {
+            transform: rotateX(0deg); //3d flip
+          }
+          /* card front */
+          .card_front {
+            position: absolute; //for flip
+            width: 100%; //for flip
+            height: 100%; //for flip
+            z-index: 100; //for flip
+            transform: rotateX(0deg);
+            transition: 0.5s;
+            backface-visibility: hidden; //use this together with transform-style: preserve-3d (parent element)
+            background-color: $color8;
+            box-shadow: 0.5em 0.7em 1em $color6;
+            margin: 1rem;
+            border-radius: 5%;
+            @include mobile {
+              margin: 0;
+            }
+            .card_title {
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+              padding: 3rem 1.5rem;
+              border-top-left-radius: 1vw;
+              border-top-right-radius: 1vw;
+              h3 {
+                padding: 0.5rem;
+                font-size: 1.5rem;
+                border-radius: 10vw;
+                background-image: linear-gradient($bgColor5);
+                @include mobile {
+                  font-size: 1.3rem;
+                }
+              }
+            }
+            //card 1
+            .one {
+              background-image: linear-gradient($bgColor2), url(./img/img1.jpg);
+              h3 span {
+                color: $color1;
+              }
+            }
+            //card 2
+            .two {
+              background-image: linear-gradient($bgColor4), url(./img/img2.jpg);
+              h3 span {
+                color: $color2;
+              }
+            }
+            //card 3
+            .three {
+              background-image: linear-gradient($bgColor3), url(./img/img3.jpg);
+              h3 span {
+                color: $color3;
+              }
+            }
+            .techStack {
+              list-style: none;
+              margin: auto;
+              padding: 1.5rem 2rem 2rem;
+              width: 60%;
+              li {
+                border-bottom: 0.1rem groove $color6;
+                font-size: 1.2rem;
+                padding: 0.5rem;
+                color: $color6;
+              }
+            }
+          }
+          /* card back */
+          .card_back {
+            width: 100%; //for flip
+            height: 100%; //for flip
+            box-shadow: 0.5em 0.7em 1em $color6;
+            margin: 1rem;
+            border-radius: 5%;
+            transform: rotateX(180deg); //to show the back side when flipped
+            transition: 0.5s;
+            @include mobile {
+              margin: 0;
+            }
+            &.one_back {
+              background: linear-gradient(#fff8bcfd, #beecaf);
+            }
+            &.two_back {
+              background: linear-gradient(#bcedfffd, #8a8af1);
+            }
+            &.three_back {
+              background: linear-gradient(#f1b565fd, #f18383);
+            }
+            p {
+              color: $color6;
+              text-align: justify;
+              padding: 3rem;
+              font-size: 1.2rem;
+            }
+            a {
+              display: block;
+              margin: 1rem auto;
+              padding: 0.5rem 1rem;
+              color: $color5;
+              text-decoration: none;
+              background-color: $color8;
+              box-shadow: 0 0.2em 0.3em $bgColor4;
+              border-radius: 50vw;
+              width: fit-content;
+              &:hover {
+                transform: translateY(-0.2rem);
+                color: $color9;
+              }
+              &:active {
+                transform: translateY(0.2rem);
+                box-shadow: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    /* footer */
+    footer {
+      width: 100%;
+      background-color: $color7;
+      color: $color8;
       text-align: center;
-      h3 {
-        color: $color7;
+      h2 {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         font-size: 3rem;
         text-transform: uppercase;
-        text-shadow: 0.1rem -0.1rem 0.1rem #e6dbe6, -0.1rem 0.2rem 0.1rem #737272, -0.2rem 0.4rem 0.1rem #9b9898,
-          -0.3rem 0.6rem 0.1rem #929191;
+        @include threeD;
       }
-      .modalPanel {
-        text-align: left;
-        margin: 2rem;
-        h4 {
-          font-size: 1.8rem;
-          text-decoration: underline;
+      .tel,
+      .mail {
+        text-decoration: none;
+        color: $color8;
+        i {
+          padding: 0 0.5rem;
         }
-        p {
-          font-size: 1.3rem;
+        &:hover {
+          color: $color5;
         }
-        ul {
-          font-size: 1.2rem;
-        }
+      }
+      .links {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
         a {
           text-decoration: none;
-          color: $color7;
+          color: $color8;
           padding-left: 2rem;
           font-size: 1.5rem;
           i {
@@ -203,279 +567,28 @@ body {
           }
         }
       }
-      .resumeLink {
-        width: 85%;
-        height: 0.1rem;
-        margin: auto;
-        border-radius: 10vw;
-        content: "";
-        background-image: linear-gradient(to right, $color9 0%, $color1 100%);
-      }
-      .closeBtn {
-        width: 10vw;
-        font-size: 1.5rem;
-        border-radius: 50vw;
-        padding: 0.5rem 0.5rem;
-        margin-bottom: 3rem;
-        background: $bgColor1;
-        box-shadow: 0 0.2em 0.3em $color7;
-        color: $color7;
-        border: 0.1rem solid $color7;
-        &:hover {
-          transform: translateY(-0.2rem);
+      .logo {
+        a {
+          display: block;
+          font-family: "UnifrakturMaguntia", cursive;
+          font-size: 4rem;
+          padding-left: 1rem;
+          padding-top: 0.5rem;
           color: $color8;
-          background: $bgColor8;
-        }
-        &:active {
-          box-shadow: none;
-          transform: translateY(0.2rem);
-        }
-      }
-    }
-  }
-
-  /* skills */
-  .skills {
-    background: linear-gradient(to right bottom, $bgColor1, $bgColor6, $bgColor1), url(./img/top4.jpg);
-    background-size: cover;
-    transform: skewY(5deg);
-    h2 {
-      transform: skewY(-5deg);
-    }
-    .row {
-      @include centering;
-      transform: translate(-50%, -50%) skewY(-5deg);
-      display: flex;
-      justify-content: center;
-      font-size: 2rem;
-      margin: auto;
-      .panel {
-        width: 20vw;
-        background-color: $bgColor1;
-        margin: 2rem;
-        padding: 1rem;
-        border-radius: 5%;
-        transition: transform 0.3s;
-        p {
-          text-transform: uppercase;
-          color: $color6;
-        }
-        .border {
-          width: 50%;
-          height: 0.1rem;
-          margin: 2rem auto;
-          background-color: $color7;
-        }
-        i {
-          font-size: 2em;
-        }
-        ul {
-          color: $color6;
-          font-size: 1.5rem;
-          list-style: none;
-          padding-left: 0;
-        }
-        &:hover {
-          transform: translateY(-1rem);
-        }
-      }
-    }
-  }
-
-  /* work */
-  .work {
-    background: linear-gradient(to right bottom, $bgColor1, $bgColor8);
-    clip-path: polygon(100% 20%, 100% 100%, 0 100%, 0 0%);
-    h2 {
-      padding-top: 6rem;
-    }
-    .line {
-      @include centering;
-      display: flex;
-      justify-content: center;
-      margin-top: 3rem;
-      .card {
-        position: relative;
-        width: 23vw;
-        min-height: 40vh;
-        margin: 2rem;
-        transition: 0.5s;
-        transform-style: preserve-3d;
-        perspective: 600px;
-        &:hover .card_front {
-          transform: rotateX(-180deg); //3d flip
-        }
-        &:hover .card_back {
-          transform: rotateX(0deg); //3d flip
-        }
-        /* card front */
-        .card_front {
-          position: absolute; //for flip
-          width: 100%; //for flip
-          height: 100%; //for flip
-          z-index: 100; //for flip
-          transform: rotateX(0deg);
-          transition: 0.5s;
-          backface-visibility: hidden; //use this together with transform-style: preserve-3d (parent element)
-          background-color: $color8;
-          box-shadow: 0.5em 0.7em 1em $color6;
-          margin: 1rem;
-          border-radius: 5%;
-          .card_title {
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
-            padding: 3rem 1.5rem;
-            border-top-left-radius: 1vw;
-            border-top-right-radius: 1vw;
-            h3 {
-              padding: 0.5rem;
-              font-size: 1.5rem;
-              border-radius: 10vw;
-              background-image: linear-gradient($bgColor5);
-            }
-          }
-          //card 1
-          .one {
-            background-image: linear-gradient($bgColor2), url(./img/img1.jpg);
-            h3 span {
-              color: $color1;
-            }
-          }
-          //card 2
-          .two {
-            background-image: linear-gradient($bgColor4), url(./img/img2.jpg);
-            h3 span {
-              color: $color2;
-            }
-          }
-          //card 3
-          .three {
-            background-image: linear-gradient($bgColor3), url(./img/img3.jpg);
-            h3 span {
-              color: $color3;
-            }
-          }
-          .techStack {
-            list-style: none;
-            margin: auto;
-            padding: 1.5rem 2rem 2rem;
-            width: 60%;
-            li {
-              border-bottom: 0.1rem groove $color6;
-              font-size: 1.2rem;
-              padding: 0.5rem;
-              color: $color6;
-            }
-          }
-        }
-        /* card back */
-        .card_back {
-          width: 100%; //for flip
-          height: 100%; //for flip
-          box-shadow: 0.5em 0.7em 1em $color6;
-          margin: 1rem;
-          border-radius: 5%;
-          transform: rotateX(180deg); //to show the back side when flipped
-          transition: 0.5s;
-          &.one_back {
-            background: linear-gradient(#fff8bcfd, #beecaf);
-          }
-          &.two_back {
-            background: linear-gradient(#bcedfffd, #8a8af1);
-          }
-          &.three_back {
-            background: linear-gradient(#f1b565fd, #f18383);
-          }
-          p {
-            color: $color6;
-            text-align: justify;
-            padding: 3rem;
-            font-size: 1.2rem;
-          }
-          a {
-            display: block;
-            margin: 1rem auto;
-            padding: 0.5rem 1rem;
+          text-decoration: none;
+          width: fit-content;
+          margin: auto;
+          @include threeD;
+          &:hover {
             color: $color5;
-            text-decoration: none;
-            background-color: $color8;
-            box-shadow: 0 0.2em 0.3em $bgColor4;
-            border-radius: 50vw;
-            width: fit-content;
-            &:hover {
-              transform: translateY(-0.2rem);
-              color: $color9;
-            }
-            &:active {
-              transform: translateY(0.2rem);
-              box-shadow: none;
-            }
+            transform: scale(1.5);
+            transition: all 0.3s;
           }
         }
       }
-    }
-  }
-
-  /* footer */
-  footer {
-    width: 100%;
-    background-color: $color7;
-    color: $color8;
-    text-align: center;
-    h2 {
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      font-size: 3rem;
-      text-transform: uppercase;
-      @include threeD;
-    }
-    .tel,
-    .mail {
-      text-decoration: none;
-      color: $color8;
-      i {
-        padding: 0 0.5rem;
+      .credit {
+        padding-bottom: 1rem;
       }
-      &:hover {
-        color: $color5;
-      }
-    }
-    .links {
-      padding-bottom: 1rem;
-      padding-top: 1rem;
-      a {
-        text-decoration: none;
-        color: $color8;
-        padding-left: 2rem;
-        font-size: 1.5rem;
-        i {
-          margin-right: 0.5rem;
-        }
-        &:hover {
-          color: $color5;
-        }
-      }
-    }
-    .logo {
-      a {
-        display: block;
-        font-family: "UnifrakturMaguntia", cursive;
-        font-size: 4rem;
-        padding-left: 1rem;
-        padding-top: 0.5rem;
-        color: $color8;
-        text-decoration: none;
-        width: fit-content;
-        margin: auto;
-        @include threeD;
-        &:hover {
-          color: $color5;
-          transform: scale(1.5);
-          transition: all 0.3s;
-        }
-      }
-    }
-    .credit {
-      padding-bottom: 1rem;
     }
   }
 }

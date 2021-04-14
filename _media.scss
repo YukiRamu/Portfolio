@@ -1,0 +1,37 @@
+/* Media Query */
+/* Devices*/
+$desktop: 1280px;
+$laptop: 1024px;
+$tablet: 768px;
+$mobile: 480px;
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $mobile) and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: $tablet) and (max-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $laptop) and (max-width: $desktop) {
+    //follow the main css configuration
+    @content;
+  }
+}
+
+@mixin largeDesktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}

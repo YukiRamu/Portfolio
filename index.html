@@ -25,253 +25,261 @@
 </head>
 
 <body>
-  <header>
-    <p class="logo">Y</p>
-    <div class="title">
-      <h1>Yuki Matsubara</h1>
-      <p>Where there is a will, there is a way.</p>
-      <button type="button" class="btn aboutBtn">About me</button>
-      <button type="button" class="btn skillBtn">Skills</button>
-      <button type="button" class="btn workBtn">See my work</button>
-      <button type="button" class="btn contactBtn">Contact</button>
+  <div class="wrap">
+    <header>
+      <p class="logo">Y</p>
+      <div class="title">
+        <h1>Yuki Matsubara</h1>
+        <p>Where there is a will, there is a way.</p>
+        <button type="button" class="btn aboutBtn">About me</button>
+        <button type="button" class="btn skillBtn">Skills</button>
+        <button type="button" class="btn workBtn">See my work</button>
+        <button type="button" class="btn contactBtn">Contact</button>
+      </div>
+    </header>
+
+    <section class="container about">
+      <h2>About me</h2>
+      <p>"Hi, I am Yuki, a passionate front-end developer based in Vancouver, Canada. A well-organized and positive
+        person, problem solver, multi-tasker. I do take the initiative to learn new things quickly." </p>
+
+      <button type="button" class="careerBtn">Career Background</button>
+      <button type="button" class="educationBtn">Educational Background</button>
+    </section>
+
+    <!--modal-->
+    <div class="modal career">
+      <div class="modalContents">
+        <h3>IT Career</h3>
+        <div class="modalPanel">
+          <h4>Global English-speaking IT Support</h4>
+          <p>Keyence Corporation. - Osaka, Japan / Mar 2020 - Dec 2020</p>
+          <ul>
+            <li>Answered service questions and provided solutions to client issues</li>
+            <li>Helped to resolve client problems in their cloud security service by identifying the root cause and
+              creating manuals for troubleshooting which led to a 70% reduction in the number of tickets for this cloud
+              security service</li>
+            <li>Managed the security and network projects and introduced the framework of creating better test scenarios
+              to the team, which led to the reduction of the number of test cases from over 1000 to 250 cases and saved
+              over 18 man-hours of labor</li>
+            <li>Created new intra websites with SharePoint online and responding to website issues</li>
+            <li>Documented user manuals and system specifications and test cases</li>
+          </ul>
+        </div>
+
+        <div class="modalPanel">
+          <h4>System Engineer / Project Manager</h4>
+          <p>The Japan Research Institute, Limited. - Tokyo, Japan / Apr 2014 – Sept 2018</p>
+          <ul>
+            <li>Coordinated the various tasks of global payment systems development – Planning, designing, and
+              integration
+              (including formal testing) and oversaw full transition into production.</li>
+            <li>Created and reviewed system test scenarios.</li>
+            <li>Managed the project for Retail Banking Integration between SMBC Trust Bank Ltd. And Citibank Japan Ltd
+              as
+              a team leader.</li>
+            <li>Worked with customers not only in Japan but in EMEA, NA and APAC region and performed English Japanese
+              interpretation during the global meeting.</li>
+          </ul>
+        </div>
+
+        <div class="modalPanel">
+          <h4>System Engineer / C# Developer</h4>
+          <p>JRI Europe, Ltd. - London, UK / Dec 2016 – Apr 2018</p>
+          <ul>
+            <li>Developed Information Management System and Approval Document Handling System (Programming with C#,
+              Oracle
+              DB, and SQL Server).</li>
+            <li>Modified the entire structure of night batch jobs and reduced the processing time by around 40%.</li>
+            <li>Created system and product documents and reduced the number of inquiries from customers by 30% and the
+              workload for skill transfer between employees.</li>
+            <li>Managed the Enhancement Project of Information Management System both as a team leader and an actual
+              developer in the local development team.</li>
+            <li>24/7 on-call system support.</li>
+          </ul>
+        </div>
+
+        <div class="resumeLink"></div>
+
+        <div class="modalPanel">
+          <p>For other careers and details, please visit the link below.</p>
+          <a href="https://github.com/YukiRamu/YukiRamu/blob/master/Resume.pdf" target="_blank"><i
+              class="fas fa-file-alt"></i>Resume</a>
+        </div>
+
+        <button type="button" class="closeBtn clsCar">Close</button>
+      </div>
     </div>
-  </header>
 
-  <section class="container about">
-    <h2>About me</h2>
-    <p>"Hi, I am Yuki, a passionate front-end developer based in Vancouver, Canada. A well-organized and positive
-      person, problem solver, multi-tasker. I do take the initiative to learn new things quickly." </p>
+    <div class="modal education">
+      <div class="modalContents">
+        <h3>Education</h3>
+        <div class="modalPanel">
+          <h4>Cornerstone International Community College Of Canada</h4>
+          <p>Web And Mobile App Development Diploma - Vancouver, Canada / Jan 2021 - Present</p>
+          <ul>
+            <li>Learning the fundamental skills of the front-end web development</li>
+            <li>Acquiring the practical skills of HTML, CSS, SASS, and JavaScript including their libraries and
+              frameworks
+            </li>
+          </ul>
+        </div>
 
-    <button type="button" class="careerBtn">Career Background</button>
-    <button type="button" class="educationBtn">Educational Background</button>
-  </section>
+        <div class="modalPanel">
+          <h4>Sordertorn University</h4>
+          <p>Major in Political Science - Stockholm, Sweden / Aug 2011/9 - Sept 2012</p>
+          <ul>
+            <li>Studied as an exchange student in mult-cultural environment</li>
+            <li>Acquiring the practical skills of approaching and finding the best point in various ways of thinking
+            </li>
+          </ul>
+        </div>
 
-  <!--modal-->
-  <div class="modal career">
-    <div class="modalContents">
-      <h3>IT Career</h3>
-      <div class="modalPanel">
-        <h4>Global English-speaking IT Support</h4>
-        <p>Keyence Corporation. - Osaka, Japan / Mar 2020 - Dec 2020</p>
-        <ul>
-          <li>Answered service questions and provided solutions to client issues</li>
-          <li>Helped to resolve client problems in their cloud security service by identifying the root cause and
-            creating manuals for troubleshooting which led to a 70% reduction in the number of tickets for this cloud
-            security service</li>
-          <li>Managed the security and network projects and introduced the framework of creating better test scenarios
-            to the team, which led to the reduction of the number of test cases from over 1000 to 250 cases and saved
-            over 18 man-hours of labor</li>
-          <li>Created new intra websites with SharePoint online and responding to website issues</li>
-          <li>Documented user manuals and system specifications and test cases</li>
-        </ul>
+        <div class="modalPanel">
+          <h4>Ritsumeikan University</h4>
+          <p>Bachelor of International Relations - Kyoto, Japan / Apr 2010 - Mar 2014</p>
+          <ul>
+            <li>Learned international politics and administration, multi-cultural studies</li>
+            <li>Gained practical knowledge of collaborating with fellow-students in a multi-cultural team</li>
+            <li>Acquired the skills of leading members and accomplishing the projects within a defined timeframe</li>
+          </ul>
+        </div>
+
+        <div class="resumeLink"></div>
+
+        <div class="modalPanel">
+          <p>For more details, please visit the link below.</p>
+          <a href="https://github.com/YukiRamu/YukiRamu/blob/master/Resume.pdf" target="_blank"><i
+              class="fas fa-file-alt"></i>Resume</a>
+        </div>
+
+        <button type="button" class="closeBtn clsEdu">Close</button>
+      </div>
+    </div>
+    <!--modal-->
+
+    <section class="container skills" id="skills">
+      <h2>Skills</h2>
+
+      <div class="row">
+        <div class="panel">
+          <p>Front end</p>
+          <div class="border"></div>
+          <i class="devicon-html5-plain-wordmark colored"></i>
+          <i class="devicon-css3-plain-wordmark colored"></i><br>
+          <i class="devicon-sass-original colored"></i>
+          <i class="devicon-javascript-plain colored"></i>
+        </div>
+
+        <div class="panel">
+          <p>Dev Tools</p>
+          <div class="border"></div>
+          <i class="devicon-visualstudio-plain colored"></i>
+          <i class="devicon-github-original-wordmark colored"></i>
+        </div>
+
+        <div class="panel">
+          <p>Deployment</p>
+          <div class="border"></div>
+          <ul>
+            <li>Project Management</li>
+            <li>System Engineering</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="container work" id="work">
+      <h2>Work</h2>
+
+      <div class="line">
+
+        <div class="card">
+          <!--card front-->
+          <div class="card_front">
+            <div class="card_title one">
+              <h3><span> Simple and Tasty Recipes</span></h3>
+            </div>
+            <ul class="techStack">
+              <li>HTML</li>
+              <li>CSS | SASS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <!--card back-->
+          <div class="card_back one_back">
+            <p>Recipe Data populated from Edaman API. User's bookmark and color theme preference are saved in Local
+              Storage.
+            </p>
+            <a href="https://yukiramu.github.io/Recipe-Finder/" target="_blank">View project</a>
+            <a href="https://github.com/YukiRamu/Recipe-Finder" target="_blank">Source Code</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <!--card front-->
+          <div class="card_front">
+            <div class="card_title two">
+              <h3><span>Weather Forecast on Earth</span></h3>
+            </div>
+            <ul class="techStack">
+              <li>HTML</li>
+              <li>CSS | SASS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <!--card back-->
+          <div class="card_back two_back">
+            <p>Current weather data for any location on Earth populated from OpemWeatherMap API. Data is refreshed every
+              two minutes. Dynamic unit change between "°F" and "°C".
+            </p>
+            <a href="https://yuki-m.ciccc.tech/" target="_blank">View project</a>
+            <a href="https://github.com/YukiRamu/WMAD-Open-Weather-Map-Project" target="_blank">Source Code</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <!--card front-->
+          <div class="card_front">
+            <div class="card_title three">
+              <h3><span>Play with JavaScript Apps</span></h3>
+            </div>
+            <ul class="techStack">
+              <li>HTML</li>
+              <li>CSS | SASS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <!--card back-->
+          <div class="card_back three_back">
+            <p>JavaScript coding portfolio. Collection of JavaScript Apps.
+            </p>
+            <a href="./index.html" target="_blank">View project</a>
+            <a href="./index.html" target="_blank">Source Code</a>
+          </div>
+        </div>
       </div>
 
-      <div class="modalPanel">
-        <h4>System Engineer / Project Manager</h4>
-        <p>The Japan Research Institute, Limited. - Tokyo, Japan / Apr 2014 – Sept 2018</p>
-        <ul>
-          <li>Coordinated the various tasks of global payment systems development – Planning, designing, and integration
-            (including formal testing) and oversaw full transition into production.</li>
-          <li>Created and reviewed system test scenarios.</li>
-          <li>Managed the project for Retail Banking Integration between SMBC Trust Bank Ltd. And Citibank Japan Ltd as
-            a team leader.</li>
-          <li>Worked with customers not only in Japan but in EMEA, NA and APAC region and performed English Japanese
-            interpretation during the global meeting.</li>
-        </ul>
-      </div>
+    </section>
 
-      <div class="modalPanel">
-        <h4>System Engineer / C# Developer</h4>
-        <p>JRI Europe, Ltd. - London, UK / Dec 2016 – Apr 2018</p>
-        <ul>
-          <li>Developed Information Management System and Approval Document Handling System (Programming with C#, Oracle
-            DB, and SQL Server).</li>
-          <li>Modified the entire structure of night batch jobs and reduced the processing time by around 40%.</li>
-          <li>Created system and product documents and reduced the number of inquiries from customers by 30% and the
-            workload for skill transfer between employees.</li>
-          <li>Managed the Enhancement Project of Information Management System both as a team leader and an actual
-            developer in the local development team.</li>
-          <li>24/7 on-call system support.</li>
-        </ul>
-      </div>
+    <footer>
+      <h2 class="contact">Reach me</h2>
+      <a class="tel" href="tel://12368892834"><i class="fas fa-phone"></i> +1 236 889 2834</a>
+      <a class="mail" href="mailto:yuki_matsubara@outlook.com"><i
+          class="fas fa-envelope-open"></i>yuki_matsubara@outlook.com</a>
 
-      <div class="resumeLink"></div>
-
-      <div class="modalPanel">
-        <p>For other careers and details, please visit the link below.</p>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/yukimatsubara/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+        <a href="https://github.com/YukiRamu" target="_blank"><i class="fab fa-github-square"></i>GitHub</a>
         <a href="https://github.com/YukiRamu/YukiRamu/blob/master/Resume.pdf" target="_blank"><i
             class="fas fa-file-alt"></i>Resume</a>
       </div>
 
-      <button type="button" class="closeBtn clsCar">Close</button>
-    </div>
+      <p class="logo"><a href="./index.html">Y</a></p>
+      <p class="credit">©Yuki Matsubara 2021. All Rights Reserved.</p>
+    </footer>
   </div>
 
-  <div class="modal education">
-    <div class="modalContents">
-      <h3>Education</h3>
-      <div class="modalPanel">
-        <h4>Cornerstone International Community College Of Canada</h4>
-        <p>Web And Mobile App Development Diploma - Vancouver, Canada / Jan 2021 - Present</p>
-        <ul>
-          <li>Learning the fundamental skills of the front-end web development</li>
-          <li>Acquiring the practical skills of HTML, CSS, SASS, and JavaScript including their libraries and frameworks
-          </li>
-        </ul>
-      </div>
-
-      <div class="modalPanel">
-        <h4>Sordertorn University</h4>
-        <p>Major in Political Science - Stockholm, Sweden / Aug 2011/9 - Sept 2012</p>
-        <ul>
-          <li>Studied as an exchange student in mult-cultural environment</li>
-          <li>Acquiring the practical skills of approaching and finding the best point in various ways of thinking</li>
-        </ul>
-      </div>
-
-      <div class="modalPanel">
-        <h4>Ritsumeikan University</h4>
-        <p>Bachelor of International Relations - Kyoto, Japan / Apr 2010 - Mar 2014</p>
-        <ul>
-          <li>Learned international politics and administration, multi-cultural studies</li>
-          <li>Gained practical knowledge of collaborating with fellow-students in a multi-cultural team</li>
-          <li>Acquired the skills of leading members and accomplishing the projects within a defined timeframe</li>
-        </ul>
-      </div>
-
-      <div class="resumeLink"></div>
-
-      <div class="modalPanel">
-        <p>For more details, please visit the link below.</p>
-        <a href="https://github.com/YukiRamu/YukiRamu/blob/master/Resume.pdf" target="_blank"><i
-            class="fas fa-file-alt"></i>Resume</a>
-      </div>
-
-      <button type="button" class="closeBtn clsEdu">Close</button>
-    </div>
-  </div>
-  <!--modal-->
-
-  <section class="container skills" id="skills">
-    <h2>Skills</h2>
-
-    <div class="row">
-      <div class="panel">
-        <p>Front end</p>
-        <div class="border"></div>
-        <i class="devicon-html5-plain-wordmark colored"></i>
-        <i class="devicon-css3-plain-wordmark colored"></i><br>
-        <i class="devicon-sass-original colored"></i>
-        <i class="devicon-javascript-plain colored"></i>
-      </div>
-
-      <div class="panel">
-        <p>Dev Tools</p>
-        <div class="border"></div>
-        <i class="devicon-visualstudio-plain colored"></i>
-        <i class="devicon-github-original-wordmark colored"></i>
-      </div>
-
-      <div class="panel">
-        <p>Deployment</p>
-        <div class="border"></div>
-        <ul>
-          <li>Project Management</li>
-          <li>System Engineering</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="container work" id="work">
-    <h2>Work</h2>
-
-    <div class="line">
-
-      <div class="card">
-        <!--card front-->
-        <div class="card_front">
-          <div class="card_title one">
-            <h3><span> Simple and Tasty Recipes</span></h3>
-          </div>
-          <ul class="techStack">
-            <li>HTML</li>
-            <li>CSS | SASS</li>
-            <li>JavaScript</li>
-          </ul>
-        </div>
-        <!--card back-->
-        <div class="card_back one_back">
-          <p>Recipe Data populated from Edaman API. User's bookmark and color theme preference are saved in Local
-            Storage.
-          </p>
-          <a href="https://yukiramu.github.io/Recipe-Finder/" target="_blank">View project</a>
-          <a href="https://github.com/YukiRamu/Recipe-Finder" target="_blank">Source Code</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <!--card front-->
-        <div class="card_front">
-          <div class="card_title two">
-            <h3><span>Weather Forecast on Earth</span></h3>
-          </div>
-          <ul class="techStack">
-            <li>HTML</li>
-            <li>CSS | SASS</li>
-            <li>JavaScript</li>
-          </ul>
-        </div>
-        <!--card back-->
-        <div class="card_back two_back">
-          <p>Current weather data for any location on Earth populated from OpemWeatherMap API. Data is refreshed every
-            two minutes. Dynamic unit change between "°F" and "°C".
-          </p>
-          <a href="https://yuki-m.ciccc.tech/" target="_blank">View project</a>
-          <a href="https://github.com/YukiRamu/WMAD-Open-Weather-Map-Project" target="_blank">Source Code</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <!--card front-->
-        <div class="card_front">
-          <div class="card_title three">
-            <h3><span>Play with JavaScript Apps</span></h3>
-          </div>
-          <ul class="techStack">
-            <li>HTML</li>
-            <li>CSS | SASS</li>
-            <li>JavaScript</li>
-          </ul>
-        </div>
-        <!--card back-->
-        <div class="card_back three_back">
-          <p>JavaScript coding portfolio. Collection of JavaScript Apps.
-          </p>
-          <a href="./index.html" target="_blank">View project</a>
-          <a href="./index.html" target="_blank">Source Code</a>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-  <footer>
-    <h2 class="contact">Reach me</h2>
-    <a class="tel" href="tel://12368892834"><i class="fas fa-phone"></i> +1 236 889 2834</a>
-    <a class="mail" href="mailto:yuki_matsubara@outlook.com"><i
-        class="fas fa-envelope-open"></i>yuki_matsubara@outlook.com</a>
-
-    <div class="links">
-      <a href="https://www.linkedin.com/in/yukimatsubara/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
-      <a href="https://github.com/YukiRamu" target="_blank"><i class="fab fa-github-square"></i>GitHub</a>
-      <a href="https://github.com/YukiRamu/YukiRamu/blob/master/Resume.pdf" target="_blank"><i
-          class="fas fa-file-alt"></i>Resume</a>
-    </div>
-
-    <p class="logo"><a href="./index.html">Y</a></p>
-    <p class="credit">©Yuki Matsubara 2021. All Rights Reserved.</p>
-  </footer>
   <!--JavaScript-->
   <script type="text/javascript" src="./index.js"></script>
 </body>
