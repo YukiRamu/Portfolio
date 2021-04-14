@@ -169,13 +169,13 @@ body .modal .modalContents {
   top: 50%;
   left: 50%;
   width: 100%;
-  background-color: #f3f7fc;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eee7ede8)), url(./img/top3.jpg);
+  background: linear-gradient(#eee7ede8), url(./img/top3.jpg);
+  background-size: cover;
   width: 80%;
   overflow: scroll;
   height: 90%;
   padding: 1rem;
-  border-bottom-left-radius: 3vw;
-  border-top-right-radius: 3vw;
   text-align: center;
 }
 
@@ -360,17 +360,24 @@ body .work .line .card {
   width: 23vw;
   min-height: 40vh;
   margin: 2rem;
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+  -webkit-perspective: 600px;
+          perspective: 600px;
   /* card front */
   /* card back */
 }
 
-body .work .line .card:hover {
-  -webkit-transform: perspective(500px) rotateY(180deg);
-          transform: perspective(500px) rotateY(180deg);
+body .work .line .card:hover .card_front {
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+}
+
+body .work .line .card:hover .card_back {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
 }
 
 body .work .line .card .card_front {
@@ -378,6 +385,10 @@ body .work .line .card .card_front {
   width: 100%;
   height: 100%;
   z-index: 100;
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   background-color: #f3f7fc;
@@ -451,8 +462,10 @@ body .work .line .card .card_back {
           box-shadow: 0.5em 0.7em 1em #434344;
   margin: 1rem;
   border-radius: 5%;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 body .work .line .card .card_back.one_back {
@@ -564,17 +577,19 @@ body footer .logo a {
   padding-top: 0.5rem;
   color: #f3f7fc;
   text-decoration: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
   text-shadow: 0.1rem -0.1rem 0.1rem #bdbdbd, -0.1rem 0.2rem 0.1rem #737272, -0.2rem 0.4rem 0.1rem #767474, -0.3rem 0.6rem 0.1rem #787777, -0.4rem 0.8rem 0.1rem #424242;
-  -webkit-transition: -webkit-transform 0.3s linear;
-  transition: -webkit-transform 0.3s linear;
-  transition: transform 0.3s linear;
-  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
 }
 
 body footer .logo a:hover {
   color: #a46da9;
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 body footer .credit {

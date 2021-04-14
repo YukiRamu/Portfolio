@@ -14,7 +14,7 @@ $bgColor3: #eeae90ca; //used
 $bgColor4: #06070794; //used
 $bgColor5: #3131319c; //used
 $bgColor6: #b286b4c0; //used
-$bgColor7: #6e9ea3a3;
+$bgColor7: #eee7ede8; //used
 $bgColor8: #9f415ca2; //used
 
 $colorTr1: #f5b090ca;
@@ -162,13 +162,12 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
     .modalContents {
       @include centering;
-      background-color: $color8;
+      background:linear-gradient($bgColor7), url(./img/top3.jpg);
+      background-size: cover;
       width: 80%;
       overflow: scroll;
       height: 90%;
       padding: 1rem;
-      border-bottom-left-radius: 3vw;
-      border-top-right-radius: 3vw;
       text-align: center;
       h3 {
         color: $color7;
@@ -299,10 +298,14 @@ body {
         width: 23vw;
         min-height: 40vh;
         margin: 2rem;
-        transition: all 0.5s linear;
+        transition: 0.5s;
         transform-style: preserve-3d;
-        &:hover {
-          transform: perspective(500px) rotateY(180deg); //3d flip
+        perspective: 600px;
+        &:hover .card_front {
+          transform: rotateX(-180deg); //3d flip
+        }
+        &:hover .card_back {
+          transform: rotateX(0deg); //3d flip
         }
         /* card front */
         .card_front {
@@ -310,6 +313,8 @@ body {
           width: 100%; //for flip
           height: 100%; //for flip
           z-index: 100; //for flip
+          transform: rotateX(0deg);
+          transition: 0.5s;
           backface-visibility: hidden; //use this together with transform-style: preserve-3d (parent element)
           background-color: $color8;
           box-shadow: 0.5em 0.7em 1em $color6;
@@ -368,7 +373,8 @@ body {
           box-shadow: 0.5em 0.7em 1em $color6;
           margin: 1rem;
           border-radius: 5%;
-          transform: rotateY(180deg); //to show the back side when flipped
+          transform: rotateX(180deg); //to show the back side when flipped
+          transition: 0.5s;
           &.one_back {
             background: linear-gradient(#fff8bcfd, #beecaf);
           }
@@ -457,11 +463,13 @@ body {
         padding-top: 0.5rem;
         color: $color8;
         text-decoration: none;
+        width: fit-content;
+        margin: auto;
         @include threeD;
-        transition: transform 0.3s linear;
         &:hover {
           color: $color5;
           transform: scale(1.5);
+          transition: all 0.3s;
         }
       }
     }
