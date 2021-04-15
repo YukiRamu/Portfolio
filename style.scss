@@ -325,7 +325,7 @@ body {
           border-radius: 5%;
           transition: transform 0.3s;
           @include mobile {
-            width:70vw;
+            width: 70vw;
             height: 23vh;
             border-radius: 7vw;
             margin: 2rem auto;
@@ -373,7 +373,8 @@ body {
       background: linear-gradient(to right bottom, $bgColor1, $bgColor8);
       clip-path: polygon(100% 20%, 100% 100%, 0 100%, 0 0%);
       @include mobile {
-        clip-path: polygon(100% 12%, 100% 100%, 0 100%, 0 8%);
+        clip-path: polygon(100% 8%, 100% 100%, 0 100%, 0 5%);
+        height: unset;
       }
       h2 {
         padding-top: 6rem;
@@ -389,7 +390,7 @@ body {
         @include mobile {
           display: block;
           position: unset;
-          padding-top: 1rem;
+          padding: 1rem 0;
           transform: unset;
           margin-top: 0;
         }
@@ -403,6 +404,7 @@ body {
           perspective: 600px;
           @include mobile {
             width: 70vw;
+            min-height: 35vh;
             margin: 1rem auto 2rem auto;
           }
           &:hover .card_front {
@@ -426,12 +428,17 @@ body {
             border-radius: 5%;
             @include mobile {
               margin: 0;
+              border-radius: 5vw;
             }
             .card_title {
               clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
               padding: 3rem 1.5rem;
               border-top-left-radius: 1vw;
               border-top-right-radius: 1vw;
+              @include mobile {
+                border-top-left-radius: 5vw;
+                border-top-right-radius: 5vw;
+              }
               h3 {
                 padding: 0.5rem;
                 font-size: 1.5rem;
@@ -468,11 +475,17 @@ body {
               margin: auto;
               padding: 1.5rem 2rem 2rem;
               width: 60%;
+              @include mobile {
+                padding: 0 1.5rem;
+              }
               li {
                 border-bottom: 0.1rem groove $color6;
                 font-size: 1.2rem;
                 padding: 0.5rem;
                 color: $color6;
+                @include mobile {
+                  font-size: 1rem;
+                }
               }
             }
           }
@@ -487,6 +500,7 @@ body {
             transition: 0.5s;
             @include mobile {
               margin: 0;
+              min-height: 35vh;
             }
             &.one_back {
               background: linear-gradient(#fff8bcfd, #beecaf);
@@ -502,6 +516,10 @@ body {
               text-align: justify;
               padding: 3rem;
               font-size: 1.2rem;
+              @include mobile {
+                font-size: 1rem;
+                padding: 2rem 1rem;
+              }
             }
             a {
               display: block;
@@ -539,6 +557,9 @@ body {
         font-size: 3rem;
         text-transform: uppercase;
         @include threeD;
+        @include mobile {
+          font-size: 2rem;
+        }
       }
       .tel,
       .mail {
@@ -559,6 +580,10 @@ body {
           color: $color8;
           padding-left: 2rem;
           font-size: 1.5rem;
+          @include mobile {
+            font-size: 1.3rem;
+            padding-left: 0.5rem;
+          }
           i {
             margin-right: 0.5rem;
           }
