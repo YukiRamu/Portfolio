@@ -1,5 +1,9 @@
 /* Media Query */
 /* Devices*/
+html {
+  -webkit-appearance: none;
+}
+
 body {
   padding: 2rem;
   font-family: "Roboto", sans-serif;
@@ -130,6 +134,12 @@ body .wrap header .title .btn {
   border: 0.1rem solid #f5e63e;
 }
 
+@media (min-width: 480px) and (max-width: 769px) {
+  body .wrap header .title .btn {
+    width: 18vw;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap header .title .btn {
     width: 30vw;
@@ -167,6 +177,12 @@ body .wrap .container h2 {
   text-shadow: 0.1rem -0.1rem 0.1rem #bdbdbd, -0.1rem 0.2rem 0.1rem #737272, -0.2rem 0.4rem 0.1rem #767474, -0.3rem 0.6rem 0.1rem #787777, -0.4rem 0.8rem 0.1rem #424242;
 }
 
+@media (min-width: 480px) and (max-width: 769px) {
+  body .wrap .container h2 {
+    font-size: 5rem;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .container h2 {
     padding-top: 7rem;
@@ -188,6 +204,13 @@ body .wrap .about {
           clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
 }
 
+@media (min-width: 480px) and (max-width: 769px) {
+  body .wrap .about {
+    -webkit-clip-path: polygon(100% 0, 100% 92%, 0 85%, 0 0);
+            clip-path: polygon(100% 0, 100% 92%, 0 85%, 0 0);
+  }
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .about {
     -webkit-clip-path: polygon(100% 0, 100% 92%, 0 87%, 0 0);
@@ -199,6 +222,14 @@ body .wrap .about p {
   font-size: 2rem;
   width: 70%;
   margin: 1rem auto;
+}
+
+@media (min-width: 480px) and (max-width: 769px) {
+  body .wrap .about p {
+    width: 90%;
+    margin: 6rem auto;
+    font-size: 3rem;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -225,6 +256,14 @@ body .wrap .about .educationBtn {
           box-shadow: 0 0.2em 0.3em #9f415c;
   color: #9f415c;
   border: 0.1rem solid #9f415c;
+}
+
+@media (min-width: 480px) and (max-width: 769px) {
+  body .wrap .about .careerBtn,
+  body .wrap .about .educationBtn {
+    width: 37vw;
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -452,6 +491,15 @@ body .wrap .skills .row {
   margin: auto;
 }
 
+@media (min-width: 480px) and (max-width: 769px) {
+  body .wrap .skills .row {
+    display: block;
+    -webkit-transform: skewY(-5deg);
+            transform: skewY(-5deg);
+    position: unset;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .skills .row {
     display: block;
@@ -473,6 +521,15 @@ body .wrap .skills .row .panel {
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
+@media (min-width: 480px) and (max-width: 769px) {
+  body .wrap .skills .row .panel {
+    width: 60vw;
+    height: 23vh;
+    border-radius: 3vw;
+    margin: 2rem auto;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .skills .row .panel {
     width: 70vw;
@@ -485,6 +542,12 @@ body .wrap .skills .row .panel {
 body .wrap .skills .row .panel p {
   text-transform: uppercase;
   color: #434344;
+}
+
+@media (min-width: 480px) and (max-width: 769px) {
+  body .wrap .skills .row .panel p {
+    font-size: 3rem;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -535,6 +598,12 @@ body .wrap .skills .row .panel ul {
   padding-left: 0;
 }
 
+@media (min-width: 480px) and (max-width: 769px) {
+  body .wrap .skills .row .panel ul {
+    font-size: 2rem;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .skills .row .panel ul {
     font-size: 1.3rem;
@@ -559,6 +628,13 @@ body .wrap .work {
           clip-path: polygon(100% 20%, 100% 100%, 0 100%, 0 0%);
 }
 
+@media (min-width: 480px) and (max-width: 769px) {
+  body .wrap .work {
+    -webkit-clip-path: polygon(100% 14%, 100% 100%, 0 100%, 0 7%);
+            clip-path: polygon(100% 14%, 100% 100%, 0 100%, 0 7%);
+  }
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .work {
     -webkit-clip-path: polygon(100% 8%, 100% 100%, 0 100%, 0 5%);
@@ -569,6 +645,12 @@ body .wrap .work {
 
 body .wrap .work h2 {
   padding-top: 6rem;
+}
+
+@media (min-width: 480px) and (max-width: 769px) {
+  body .wrap .work h2 {
+    padding-top: 12rem;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -591,6 +673,17 @@ body .wrap .work .line {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 3rem;
+}
+
+@media (min-width: 480px) and (max-width: 769px) {
+  body .wrap .work .line {
+    display: block;
+    position: unset;
+    padding: 1rem 0;
+    -webkit-transform: unset;
+            transform: unset;
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -617,6 +710,14 @@ body .wrap .work .line .card {
           perspective: 600px;
   /* card front */
   /* card back */
+}
+
+@media (min-width: 480px) and (max-width: 769px) {
+  body .wrap .work .line .card {
+    width: 70vw;
+    min-height: 20vh;
+    margin: 1rem auto 2rem auto;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -655,6 +756,13 @@ body .wrap .work .line .card .card_front {
   border-radius: 5%;
 }
 
+@media (min-width: 480px) and (max-width: 769px) {
+  body .wrap .work .line .card .card_front {
+    margin: 0;
+    border-radius: 5%;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .work .line .card .card_front {
     margin: 0;
@@ -668,6 +776,12 @@ body .wrap .work .line .card .card_front .card_title {
   padding: 3rem 1.5rem;
   border-top-left-radius: 1vw;
   border-top-right-radius: 1vw;
+}
+
+@media (min-width: 480px) and (max-width: 769px) {
+  body .wrap .work .line .card .card_front .card_title {
+    padding: 2.5rem 1.5rem;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -689,6 +803,12 @@ body .wrap .work .line .card .card_front .card_title h3 {
   border-radius: 10vw;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#3131319c));
   background-image: linear-gradient(#3131319c);
+}
+
+@media (min-width: 480px) and (max-width: 769px) {
+  body .wrap .work .line .card .card_front .card_title h3 {
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -737,6 +857,12 @@ body .wrap .work .line .card .card_front .techStack {
   width: 60%;
 }
 
+@media (min-width: 480px) and (max-width: 769px) {
+  body .wrap .work .line .card .card_front .techStack {
+    width: 75%;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .work .line .card .card_front .techStack {
     padding: 0 1.5rem;
@@ -754,6 +880,14 @@ body .wrap .work .line .card .card_front .techStack li {
   font-size: 1.2rem;
   padding: 0.5rem;
   color: #434344;
+}
+
+@media (min-width: 480px) and (max-width: 769px) {
+  body .wrap .work .line .card .card_front .techStack li {
+    display: inline-block;
+    font-size: 2rem;
+    border-bottom: none;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -779,6 +913,13 @@ body .wrap .work .line .card .card_back {
           transform: rotateX(180deg);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+@media (min-width: 480px) and (max-width: 769px) {
+  body .wrap .work .line .card .card_back {
+    margin: 0;
+    min-height: 20vh;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -844,6 +985,13 @@ body .wrap .work .line .card .card_back a {
   width: fit-content;
 }
 
+@media (min-width: 480px) and (max-width: 769px) {
+  body .wrap .work .line .card .card_back a {
+    display: inline;
+    margin: 1rem 1rem;
+  }
+}
+
 body .wrap .work .line .card .card_back a:hover {
   -webkit-transform: translateY(-0.2rem);
           transform: translateY(-0.2rem);
@@ -872,6 +1020,12 @@ body .wrap footer h2 {
   text-shadow: 0.1rem -0.1rem 0.1rem #bdbdbd, -0.1rem 0.2rem 0.1rem #737272, -0.2rem 0.4rem 0.1rem #767474, -0.3rem 0.6rem 0.1rem #787777, -0.4rem 0.8rem 0.1rem #424242;
 }
 
+@media (min-width: 480px) and (max-width: 769px) {
+  body .wrap footer h2 {
+    font-size: 5rem;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap footer h2 {
     font-size: 2rem;
@@ -888,6 +1042,13 @@ body .wrap footer .tel,
 body .wrap footer .mail {
   text-decoration: none;
   color: #f3f7fc;
+}
+
+@media (min-width: 480px) and (max-width: 769px) {
+  body .wrap footer .tel,
+  body .wrap footer .mail {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 320px) {
@@ -917,6 +1078,12 @@ body .wrap footer .links a {
   color: #f3f7fc;
   padding-left: 2rem;
   font-size: 1.5rem;
+}
+
+@media (min-width: 480px) and (max-width: 769px) {
+  body .wrap footer .links a {
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {

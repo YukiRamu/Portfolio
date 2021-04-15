@@ -2,9 +2,11 @@
 /* Devices*/
 $desktop: 1280px;
 $laptop: 1024px;
-$tablet: 768px;
+$tablet: 769px; //done
 $mobile: 480px; //done
-$smallMobile: 320px;
+$smallMobile: 320px; //done
+
+//landscape handling
 
 @mixin smallMobile {
   @media (max-width: $smallMobile) {
@@ -13,12 +15,16 @@ $smallMobile: 320px;
 }
 
 @mixin mobile {
+  //@media (min-width: 320px) and (max-width: 480px)
   @media (min-width: $smallMobile) and(max-width: $mobile) {
     @content;
   }
 }
 
+//520, 560. 576
+
 @mixin tablet {
+  //@media (min-width: 480px) and (max-width: 769px)
   @media (min-width: $mobile) and (max-width: $tablet) {
     @content;
   }
