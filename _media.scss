@@ -41,7 +41,6 @@ $smallMobile: 320px; //27.4%
 
 //#3 Additional breakpoint : 991.98px
 
-
 @mixin laptop {
   //@media (min-width: 769px) and (max-width: 1024px)
   @media (min-width: $tablet) and (max-width: $laptop) {
