@@ -9,6 +9,7 @@ $smallMobile: 320px; //done
 //#1 landscape handling
 
 @mixin smallMobile {
+  //@media (max-width: 320px)
   @media (max-width: $smallMobile) {
     @content;
   }

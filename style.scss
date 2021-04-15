@@ -372,7 +372,7 @@ body {
           transition: transform 0.3s;
           @include tablet {
             width: 60vw;
-            height: 23vh;
+            height: 20vh;
             border-radius: 3vw;
             margin: 2rem auto;
           }
@@ -386,7 +386,7 @@ body {
             text-transform: uppercase;
             color: $color6;
             @include tablet {
-              font-size: 3rem;
+              font-size: 2rem;
             }
             @include mobile {
               font-size: 1.5rem;
@@ -400,6 +400,9 @@ body {
             height: 0.1rem;
             margin: 2rem auto;
             background-color: $color7;
+            @include tablet {
+              margin: 1rem auto;
+            }
             @include mobile {
               margin: 1rem auto;
             }
@@ -419,7 +422,7 @@ body {
             list-style: none;
             padding-left: 0;
             @include tablet {
-              font-size: 2rem;
+              font-size: 1.5rem;
             }
             @include mobile {
               font-size: 1.3rem;
@@ -439,6 +442,9 @@ body {
     .work {
       background: linear-gradient(to right bottom, $bgColor1, $bgColor8);
       clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0 100%);
+      @include tablet {
+        height: unset;
+      }
       @include mobile {
         clip-path: polygon(0 5%, 100% 5%, 100% 100%, 0 100%);
         height: unset;
@@ -446,7 +452,7 @@ body {
       h2 {
         padding-top: 6rem;
         @include tablet {
-          padding-top: 12rem;
+          padding-top: 10rem;
         }
         @include mobile {
           padding-top: 7rem;
@@ -481,7 +487,7 @@ body {
           perspective: 600px;
           @include tablet {
             width: 70vw;
-            min-height: 20vh;
+            min-height: 25vh;
             margin: 1rem auto 2rem auto;
           }
           @include mobile {
@@ -507,26 +513,20 @@ body {
             background-color: $color8;
             box-shadow: 0.5em 0.7em 1em $color6;
             margin: 1rem;
-            border-radius: 5%;
+            border-radius: 3vw;
             @include tablet {
               margin: 0;
-              border-radius: 5%;
             }
             @include mobile {
               margin: 0;
-              border-radius: 5vw;
             }
             .card_title {
               clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
               padding: 3rem 1.5rem;
-              border-top-left-radius: 1vw;
-              border-top-right-radius: 1vw;
+              border-top-left-radius: 3vw;
+              border-top-right-radius: 3vw;
               @include tablet {
                 padding: 2.5rem 1.5rem;
-              }
-              @include mobile {
-                border-top-left-radius: 5vw;
-                border-top-right-radius: 5vw;
               }
               @include smallMobile {
                 padding: 2rem 1.5rem;
@@ -607,12 +607,12 @@ body {
             height: 100%; //for flip
             box-shadow: 0.5em 0.7em 1em $color6;
             margin: 1rem;
-            border-radius: 5%;
+            border-radius: 3vw;
             transform: rotateX(180deg); //to show the back side when flipped
             transition: 0.5s;
             @include tablet {
               margin: 0;
-              min-height: 20vh;
+              min-height: 25vh;
             }
             @include mobile {
               margin: 0;

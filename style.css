@@ -510,7 +510,7 @@ body .wrap .skills .row .panel {
 @media (min-width: 480px) and (max-width: 769px) {
   body .wrap .skills .row .panel {
     width: 60vw;
-    height: 23vh;
+    height: 20vh;
     border-radius: 3vw;
     margin: 2rem auto;
   }
@@ -532,7 +532,7 @@ body .wrap .skills .row .panel p {
 
 @media (min-width: 480px) and (max-width: 769px) {
   body .wrap .skills .row .panel p {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
@@ -553,6 +553,12 @@ body .wrap .skills .row .panel .border {
   height: 0.1rem;
   margin: 2rem auto;
   background-color: #9f415c;
+}
+
+@media (min-width: 480px) and (max-width: 769px) {
+  body .wrap .skills .row .panel .border {
+    margin: 1rem auto;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -586,7 +592,7 @@ body .wrap .skills .row .panel ul {
 
 @media (min-width: 480px) and (max-width: 769px) {
   body .wrap .skills .row .panel ul {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -614,6 +620,12 @@ body .wrap .work {
           clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0 100%);
 }
 
+@media (min-width: 480px) and (max-width: 769px) {
+  body .wrap .work {
+    height: unset;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .work {
     -webkit-clip-path: polygon(0 5%, 100% 5%, 100% 100%, 0 100%);
@@ -628,7 +640,7 @@ body .wrap .work h2 {
 
 @media (min-width: 480px) and (max-width: 769px) {
   body .wrap .work h2 {
-    padding-top: 12rem;
+    padding-top: 10rem;
   }
 }
 
@@ -694,7 +706,7 @@ body .wrap .work .line .card {
 @media (min-width: 480px) and (max-width: 769px) {
   body .wrap .work .line .card {
     width: 70vw;
-    min-height: 20vh;
+    min-height: 25vh;
     margin: 1rem auto 2rem auto;
   }
 }
@@ -732,20 +744,18 @@ body .wrap .work .line .card .card_front {
   -webkit-box-shadow: 0.5em 0.7em 1em #434344;
           box-shadow: 0.5em 0.7em 1em #434344;
   margin: 1rem;
-  border-radius: 5%;
+  border-radius: 3vw;
 }
 
 @media (min-width: 480px) and (max-width: 769px) {
   body .wrap .work .line .card .card_front {
     margin: 0;
-    border-radius: 5%;
   }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .work .line .card .card_front {
     margin: 0;
-    border-radius: 5vw;
   }
 }
 
@@ -753,20 +763,13 @@ body .wrap .work .line .card .card_front .card_title {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
   padding: 3rem 1.5rem;
-  border-top-left-radius: 1vw;
-  border-top-right-radius: 1vw;
+  border-top-left-radius: 3vw;
+  border-top-right-radius: 3vw;
 }
 
 @media (min-width: 480px) and (max-width: 769px) {
   body .wrap .work .line .card .card_front .card_title {
     padding: 2.5rem 1.5rem;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  body .wrap .work .line .card .card_front .card_title {
-    border-top-left-radius: 5vw;
-    border-top-right-radius: 5vw;
   }
 }
 
@@ -887,7 +890,7 @@ body .wrap .work .line .card .card_back {
   -webkit-box-shadow: 0.5em 0.7em 1em #434344;
           box-shadow: 0.5em 0.7em 1em #434344;
   margin: 1rem;
-  border-radius: 5%;
+  border-radius: 3vw;
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
   -webkit-transition: 0.5s;
@@ -897,7 +900,7 @@ body .wrap .work .line .card .card_back {
 @media (min-width: 480px) and (max-width: 769px) {
   body .wrap .work .line .card .card_back {
     margin: 0;
-    min-height: 20vh;
+    min-height: 25vh;
   }
 }
 
