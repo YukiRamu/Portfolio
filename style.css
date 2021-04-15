@@ -200,22 +200,8 @@ body .wrap .container h2 {
 body .wrap .about {
   background: -webkit-gradient(linear, left top, right bottom, from(#9f415ca2), to(#f3f7fcae));
   background: linear-gradient(to right bottom, #9f415ca2, #f3f7fcae);
-  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
-          clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
-}
-
-@media (min-width: 480px) and (max-width: 769px) {
-  body .wrap .about {
-    -webkit-clip-path: polygon(100% 0, 100% 92%, 0 85%, 0 0);
-            clip-path: polygon(100% 0, 100% 92%, 0 85%, 0 0);
-  }
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  body .wrap .about {
-    -webkit-clip-path: polygon(100% 0, 100% 92%, 0 87%, 0 0);
-            clip-path: polygon(100% 0, 100% 92%, 0 87%, 0 0);
-  }
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 90%);
+          clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 90%);
 }
 
 body .wrap .about p {
@@ -624,21 +610,14 @@ body .wrap .skills .row .panel:hover {
 body .wrap .work {
   background: -webkit-gradient(linear, left top, right bottom, from(#f3f7fcae), to(#9f415ca2));
   background: linear-gradient(to right bottom, #f3f7fcae, #9f415ca2);
-  -webkit-clip-path: polygon(100% 20%, 100% 100%, 0 100%, 0 0%);
-          clip-path: polygon(100% 20%, 100% 100%, 0 100%, 0 0%);
-}
-
-@media (min-width: 480px) and (max-width: 769px) {
-  body .wrap .work {
-    -webkit-clip-path: polygon(100% 14%, 100% 100%, 0 100%, 0 7%);
-            clip-path: polygon(100% 14%, 100% 100%, 0 100%, 0 7%);
-  }
+  -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0 100%);
+          clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0 100%);
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .work {
-    -webkit-clip-path: polygon(100% 8%, 100% 100%, 0 100%, 0 5%);
-            clip-path: polygon(100% 8%, 100% 100%, 0 100%, 0 5%);
+    -webkit-clip-path: polygon(0 5%, 100% 5%, 100% 100%, 0 100%);
+            clip-path: polygon(0 5%, 100% 5%, 100% 100%, 0 100%);
     height: unset;
   }
 }
