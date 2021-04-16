@@ -39,6 +39,12 @@ body .wrap header .logo {
   text-shadow: 0.1rem -0.1rem 0.1rem #bdbdbd, -0.1rem 0.2rem 0.1rem #737272, -0.2rem 0.4rem 0.1rem #767474, -0.3rem 0.6rem 0.1rem #787777, -0.4rem 0.8rem 0.1rem #424242;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  body .wrap header .logo {
+    font-size: 2rem;
+  }
+}
+
 body .wrap header .title {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
@@ -58,13 +64,13 @@ body .wrap header .title h1 {
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap header .title h1 {
     font-size: 2rem;
-    margin-top: 2rem;
+    margin-top: 5rem;
   }
 }
 
 @media (max-width: 320px) {
   body .wrap header .title h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 5rem;
   }
 }
@@ -79,14 +85,14 @@ body .wrap header .title p {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap header .title p {
-    margin-bottom: 6rem;
-    font-size: 1.5rem;
+    margin-bottom: 7rem;
+    font-size: 1.2rem;
   }
 }
 
 @media (max-width: 320px) {
   body .wrap header .title p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -145,7 +151,7 @@ body .wrap header .title .btn {
     width: 30vw;
     display: block;
     margin: 2rem auto;
-    font-size: 80%;
+    font-size: 0.8rem;
   }
 }
 
@@ -185,7 +191,7 @@ body .wrap .container h2 {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .container h2 {
-    padding-top: 7rem;
+    padding-top: 5rem;
     font-size: 1.5rem;
   }
 }
@@ -193,7 +199,7 @@ body .wrap .container h2 {
 @media (max-width: 320px) {
   body .wrap .container h2 {
     padding-top: 3rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -221,13 +227,13 @@ body .wrap .about p {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .about p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
 @media (max-width: 320px) {
   body .wrap .about p {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 }
 
@@ -257,7 +263,7 @@ body .wrap .about .educationBtn {
   body .wrap .about .careerBtn,
   body .wrap .about .educationBtn {
     font-size: 1rem;
-    width: 40vw;
+    width: 45vw;
     display: block;
     margin: 2rem auto;
   }
@@ -370,7 +376,7 @@ body .wrap .modal .modalContents .modalPanel ul {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .modal .modalContents .modalPanel ul {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding-left: 2rem;
   }
 }
@@ -421,7 +427,7 @@ body .wrap .modal .modalContents .closeBtn {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .modal .modalContents .closeBtn {
-    width: 20vw;
+    width: 25vw;
     font-size: 1.2rem;
   }
 }
@@ -539,13 +545,13 @@ body .wrap .skills .row .panel p {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .skills .row .panel p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
 @media (max-width: 320px) {
   body .wrap .skills .row .panel p {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 }
 
@@ -574,13 +580,13 @@ body .wrap .skills .row .panel i {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .skills .row .panel i {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 }
 
 @media (max-width: 320px) {
   body .wrap .skills .row .panel i {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
 
@@ -599,13 +605,13 @@ body .wrap .skills .row .panel ul {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .skills .row .panel ul {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 320px) {
   body .wrap .skills .row .panel ul {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
@@ -802,7 +808,7 @@ body .wrap .work .line .card .card_front .card_title h3 {
 
 @media (max-width: 320px) {
   body .wrap .work .line .card .card_front .card_title h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
@@ -1017,7 +1023,7 @@ body .wrap footer h2 {
 
 @media (max-width: 320px) {
   body .wrap footer h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -1034,10 +1040,18 @@ body .wrap footer .mail {
   }
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  body .wrap footer .tel,
+  body .wrap footer .mail {
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: 320px) {
   body .wrap footer .tel,
   body .wrap footer .mail {
     display: block;
+    font-size: 1.2rem;
   }
 }
 
@@ -1071,7 +1085,7 @@ body .wrap footer .links a {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap footer .links a {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding-left: 0.5rem;
   }
 }
