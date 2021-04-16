@@ -57,7 +57,7 @@ body .wrap header .title h1 {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap header .title h1 {
-    font-size: 40%;
+    font-size: 2rem;
     margin-top: 40%;
   }
 }
