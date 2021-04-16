@@ -63,8 +63,8 @@ body .wrap header .title h1 {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap header .title h1 {
-    font-size: 2rem;
-    margin-top: 5rem;
+    font-size: 1.8rem;
+    margin-top: 7rem;
   }
 }
 
@@ -114,15 +114,15 @@ body .wrap header .title p:after {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap header .title p:after {
-    top: 35%;
+    top: 45%;
     width: 50%;
-    height: 0.3rem;
+    height: 0.2rem;
   }
 }
 
 @media (max-width: 320px) {
   body .wrap header .title p:after {
-    top: 39%;
+    top: 40%;
     height: 0.1rem;
   }
 }
@@ -191,14 +191,14 @@ body .wrap .container h2 {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .container h2 {
-    padding-top: 5rem;
+    padding-top: 3rem;
     font-size: 1.5rem;
   }
 }
 
 @media (max-width: 320px) {
   body .wrap .container h2 {
-    padding-top: 3rem;
+    padding-top: 1rem;
     font-size: 1.2rem;
   }
 }
@@ -263,7 +263,7 @@ body .wrap .about .educationBtn {
   body .wrap .about .careerBtn,
   body .wrap .about .educationBtn {
     font-size: 1rem;
-    width: 45vw;
+    width: 70vw;
     display: block;
     margin: 2rem auto;
   }
@@ -328,13 +328,13 @@ body .wrap .modal .modalContents h3 {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .modal .modalContents h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 320px) {
   body .wrap .modal .modalContents h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -356,7 +356,7 @@ body .wrap .modal .modalContents .modalPanel h4 {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .modal .modalContents .modalPanel h4 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -366,7 +366,7 @@ body .wrap .modal .modalContents .modalPanel p {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .modal .modalContents .modalPanel p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -526,7 +526,7 @@ body .wrap .skills .row .panel {
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .skills .row .panel {
     width: 70vw;
-    height: 23vh;
+    height: 20vh;
     border-radius: 7vw;
     margin: 2rem auto;
   }
@@ -545,13 +545,13 @@ body .wrap .skills .row .panel p {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .skills .row .panel p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 320px) {
   body .wrap .skills .row .panel p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -605,13 +605,13 @@ body .wrap .skills .row .panel ul {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .skills .row .panel ul {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 
 @media (max-width: 320px) {
   body .wrap .skills .row .panel ul {
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
 }
 
@@ -653,7 +653,7 @@ body .wrap .work h2 {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .work h2 {
-    padding-top: 7rem;
+    padding-top: 5rem;
   }
 }
 
@@ -802,13 +802,13 @@ body .wrap .work .line .card .card_front .card_title h3 {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .work .line .card .card_front .card_title h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 320px) {
   body .wrap .work .line .card .card_front .card_title h3 {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -881,13 +881,13 @@ body .wrap .work .line .card .card_front .techStack li {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .work .line .card .card_front .techStack li {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 
 @media (max-width: 320px) {
   body .wrap .work .line .card .card_front .techStack li {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
   }
 }
 
@@ -1043,7 +1043,7 @@ body .wrap footer .mail {
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap footer .tel,
   body .wrap footer .mail {
-    font-size: 1.5rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -1051,7 +1051,7 @@ body .wrap footer .mail {
   body .wrap footer .tel,
   body .wrap footer .mail {
     display: block;
-    font-size: 1.2rem;
+    font-size: 0.5rem;
   }
 }
 
