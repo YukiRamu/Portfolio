@@ -1,10 +1,13 @@
 /* Media Query */
 /* Devices*/
-$desktop: 1280px; 
-$laptop: 1024px; 
-$tablet: 769px; //done
-$mobile: 480px; //done
-$smallMobile: 320px; //done
+//Default stamdard: width 1164px, height 516px
+
+$desktop: 1280px; // 109.9%
+$laptop: 1024px;//87.9%
+$tablet: 769px; //done 66%
+$largeMobile: 520px; //44.6%
+$mobile: 480px; //done 41.2%
+$smallMobile: 320px; //done 27.4%
 
 //#1 landscape handling
 
@@ -23,6 +26,11 @@ $smallMobile: 320px; //done
 }
 
 //#2 breakpoint : 520, 560. 576
+@mixin largeMobile {
+  @media (min-width: $mobile) and (max-width: $largeMobile) {
+    @content;
+  }
+}
 
 @mixin tablet {
   //@media (min-width: 480px) and (max-width: 769px)

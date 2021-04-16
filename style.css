@@ -57,8 +57,8 @@ body .wrap header .title h1 {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap header .title h1 {
-    font-size: 2.5rem;
-    margin-top: 2rem;
+    font-size: 40%;
+    margin-top: 40%;
   }
 }
 
@@ -80,7 +80,7 @@ body .wrap header .title p {
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap header .title p {
     margin-bottom: 6rem;
-    font-size: 2rem;
+    font-size: 40%;
   }
 }
 
@@ -145,7 +145,7 @@ body .wrap header .title .btn {
     width: 30vw;
     display: block;
     margin: 2rem auto;
-    font-size: 1rem;
+    font-size: 40%;
   }
 }
 
@@ -186,7 +186,7 @@ body .wrap .container h2 {
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .container h2 {
     padding-top: 7rem;
-    font-size: 2rem;
+    font-size: 40%;
   }
 }
 
@@ -215,12 +215,13 @@ body .wrap .about p {
     width: 90%;
     margin: 6rem auto;
     font-size: 3rem;
+    height: unset;
   }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .about p {
-    font-size: 1.5rem;
+    font-size: 40%;
   }
 }
 
@@ -255,7 +256,7 @@ body .wrap .about .educationBtn {
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .about .careerBtn,
   body .wrap .about .educationBtn {
-    font-size: 1rem;
+    font-size: 40%;
     width: 40vw;
     display: block;
     margin: 2rem auto;
@@ -321,7 +322,7 @@ body .wrap .modal .modalContents h3 {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .modal .modalContents h3 {
-    font-size: 3rem;
+    font-size: 40%;
   }
 }
 
@@ -349,7 +350,7 @@ body .wrap .modal .modalContents .modalPanel h4 {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .modal .modalContents .modalPanel h4 {
-    font-size: 1.3rem;
+    font-size: 40%;
   }
 }
 
@@ -359,7 +360,7 @@ body .wrap .modal .modalContents .modalPanel p {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .modal .modalContents .modalPanel p {
-    font-size: 1.2rem;
+    font-size: 40%;
   }
 }
 
@@ -369,7 +370,7 @@ body .wrap .modal .modalContents .modalPanel ul {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .modal .modalContents .modalPanel ul {
-    font-size: 1.1rem;
+    font-size: 40%;
     padding-left: 2rem;
   }
 }
@@ -383,7 +384,7 @@ body .wrap .modal .modalContents .modalPanel a {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .modal .modalContents .modalPanel a {
-    font-size: 1.1rem;
+    font-size: 40%;
   }
 }
 
@@ -421,7 +422,7 @@ body .wrap .modal .modalContents .closeBtn {
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .modal .modalContents .closeBtn {
     width: 20vw;
-    font-size: 1.2rem;
+    font-size: 40%;
   }
 }
 
@@ -538,7 +539,7 @@ body .wrap .skills .row .panel p {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .skills .row .panel p {
-    font-size: 1.5rem;
+    font-size: 40%;
   }
 }
 
@@ -573,7 +574,7 @@ body .wrap .skills .row .panel i {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .skills .row .panel i {
-    font-size: 1.5em;
+    font-size: 40%;
   }
 }
 
@@ -598,7 +599,7 @@ body .wrap .skills .row .panel ul {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .skills .row .panel ul {
-    font-size: 1.3rem;
+    font-size: 40%;
   }
 }
 
@@ -795,7 +796,7 @@ body .wrap .work .line .card .card_front .card_title h3 {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .work .line .card .card_front .card_title h3 {
-    font-size: 1.3rem;
+    font-size: 40%;
   }
 }
 
@@ -867,14 +868,14 @@ body .wrap .work .line .card .card_front .techStack li {
 @media (min-width: 480px) and (max-width: 769px) {
   body .wrap .work .line .card .card_front .techStack li {
     display: inline-block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     border-bottom: none;
   }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .work .line .card .card_front .techStack li {
-    font-size: 1rem;
+    font-size: 40%;
   }
 }
 
@@ -941,7 +942,7 @@ body .wrap .work .line .card .card_back p {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .work .line .card .card_back p {
-    font-size: 1rem;
+    font-size: 40%;
     padding: 2rem 1rem;
   }
 }
@@ -1010,7 +1011,7 @@ body .wrap footer h2 {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap footer h2 {
-    font-size: 2rem;
+    font-size: 40%;
   }
 }
 
@@ -1070,7 +1071,7 @@ body .wrap footer .links a {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap footer .links a {
-    font-size: 1.3rem;
+    font-size: 40%;
     padding-left: 0.5rem;
   }
 }
