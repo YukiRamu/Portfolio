@@ -3,7 +3,7 @@
 //Default stamdard: 13.5" laptop width 1164px, height 516px
 
 $desktop: 1280px; // 109.9%
-$laptop: 1024px;//87.9%
+$laptop: 1024px; //87.9%
 $tablet: 769px; // 66%
 $largeMobile: 520px; //44.6%
 $mobile: 480px; //41.2%
@@ -25,7 +25,7 @@ $smallMobile: 320px; //27.4%
   }
 }
 
-//#2 breakpoint : 520, 560. 576?
+//#2 Additional breakpoint : "520", 560. 576?
 // @mixin largeMobile {
 //   @media (min-width: $mobile) and (max-width: $largeMobile) {
 //     @content;
@@ -39,6 +39,9 @@ $smallMobile: 320px; //27.4%
   }
 }
 
+//#3 Additional breakpoint : 991.98px
+
+
 @mixin laptop {
   //@media (min-width: 769px) and (max-width: 1024px)
   @media (min-width: $tablet) and (max-width: $laptop) {
@@ -46,10 +49,8 @@ $smallMobile: 320px; //27.4%
   }
 }
 
-//#2 breakpoint : 991.98px?
-
 @mixin desktop {
-   //@media (min-width: 1024px) and (max-width: 1280px)
+  //@media (min-width: 1024px) and (max-width: 1280px)
   @media (min-width: $laptop) and (max-width: $desktop) {
     @content;
   }
@@ -62,9 +63,8 @@ $smallMobile: 320px; //27.4%
   }
 }
 
-
 //=============================================
-//2021 breakpoints 
+//2021 breakpoints
 // @media (max-width: 575.98px) { ... }
 
 // // Small devices (landscape phones, less than 768px)
