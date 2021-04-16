@@ -488,7 +488,7 @@ body {
           }
           @include mobile {
             width: 70vw;
-            min-height: 40vh;
+            min-height: 50vh;
             margin: 1rem auto 2rem auto;
           }
           &:hover .card_front {
@@ -573,7 +573,7 @@ body {
                 width: 75%;
               }
               @include mobile {
-                padding: 0 1.5rem;
+                padding: 0 1rem;
               }
               @include smallMobile {
                 width: 50%;
@@ -590,9 +590,11 @@ body {
                 }
                 @include mobile {
                   font-size: 0.8rem;
+                  border-bottom: none;
                 }
                 @include smallMobile {
                   font-size: 0.5rem;
+                  border-bottom: none;
                 }
               }
             }
@@ -612,7 +614,7 @@ body {
             }
             @include mobile {
               margin: 0;
-              min-height: 40vh;
+              min-height: 50vh;
             }
             @include smallMobile {
               min-height: 50vh;
