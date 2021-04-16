@@ -69,7 +69,7 @@ body {
           font-family: "Train One", cursive;
           @include mobile {
             font-size: 2.5rem;
-            margin-top: 40%;
+            margin-top: 2rem;
           }
           @include smallMobile {
             font-size: 2rem;
@@ -85,7 +85,6 @@ body {
           @include mobile {
             margin-bottom: 6rem;
             font-size: 2rem;
-            //font-size: 40%;
           }
           @include smallMobile {
             font-size: 1.5rem;
@@ -127,7 +126,7 @@ body {
             display: block;
             margin: 2rem auto;
             //font-size: 1rem;
-            font-size: 40%;
+            font-size: 80%;
           }
           &:hover {
             transform: translateY(-0.2rem);
@@ -158,8 +157,7 @@ body {
         }
         @include mobile {
           padding-top: 7rem;
-          //font-size: 2rem;
-          font-size: 40%;
+          font-size: 2rem;
         }
         @include smallMobile {
           padding-top: 3rem;
@@ -183,8 +181,7 @@ body {
           height: unset;
         }
         @include mobile {
-          //font-size: 1.5rem;
-          font-size: 40%;
+          font-size: 1.5rem;
         }
         @include smallMobile {
           font-size: 1.3rem;
@@ -206,8 +203,7 @@ body {
           font-size: 2rem;
         }
         @include mobile {
-          //font-size: 1rem;
-          font-size: 40%;
+          font-size: 1rem;
           width: 40vw;
           display: block;
           margin: 2rem auto;
@@ -250,8 +246,7 @@ body {
           text-shadow: 0.1rem -0.1rem 0.1rem #e6dbe6, -0.1rem 0.2rem 0.1rem #737272, -0.2rem 0.4rem 0.1rem #9b9898,
             -0.3rem 0.6rem 0.1rem #929191;
           @include mobile {
-            //font-size: 3rem;
-            font-size: 40%;
+            font-size: 3rem;
           }
           @include smallMobile {
             font-size: 2rem;
@@ -267,22 +262,19 @@ body {
             font-size: 1.8rem;
             text-decoration: underline;
             @include mobile {
-              //font-size: 1.3rem;
-              font-size: 40%;
+              font-size: 1.3rem;
             }
           }
           p {
             font-size: 1.3rem;
             @include mobile {
-              //font-size: 1.2rem;
-              font-size: 40%;
+              font-size: 1.2rem;
             }
           }
           ul {
             font-size: 1.2rem;
             @include mobile {
-              // font-size: 1.1rem;
-              font-size: 40%;
+              font-size: 1.1rem;
               padding-left: 2rem;
             }
           }
@@ -292,8 +284,7 @@ body {
             padding-left: 2rem;
             font-size: 1.5rem;
             @include mobile {
-              // font-size: 1.1rem;
-              font-size: 40%;
+              font-size: 1.1rem;
             }
             i {
               margin-right: 0.5rem;
@@ -323,8 +314,7 @@ body {
           border: 0.1rem solid $color7;
           @include mobile {
             width: 20vw;
-            // font-size: 1.2rem;
-            font-size: 40%;
+            font-size: 1.2rem;
           }
           &:hover {
             transform: translateY(-0.2rem);
@@ -393,8 +383,7 @@ body {
               font-size: 2rem;
             }
             @include mobile {
-              //font-size: 1.5rem;
-              font-size: 40%;
+              font-size: 1.5rem;
             }
             @include smallMobile {
               font-size: 1.3rem;
@@ -415,8 +404,7 @@ body {
           i {
             font-size: 2em;
             @include mobile {
-              //font-size: 1.5em;
-              font-size: 40%;
+              font-size: 1.5em;
             }
             @include smallMobile {
               font-size: 1.2em;
@@ -431,8 +419,7 @@ body {
               font-size: 1.5rem;
             }
             @include mobile {
-              // font-size: 1.3rem;
-              font-size: 40%;
+              font-size: 1.3rem;
             }
             @include smallMobile {
               font-size: 1.2rem;
@@ -547,8 +534,7 @@ body {
                   font-size: 2rem;
                 }
                 @include mobile {
-                  //font-size: 1.3rem;
-                  font-size: 40%;
+                  font-size: 1.3rem;
                 }
                 @include smallMobile {
                   font-size: 1.2rem;
@@ -601,8 +587,7 @@ body {
                   border-bottom: none;
                 }
                 @include mobile {
-                  // font-size: 1rem;
-                  font-size: 40%;
+                  font-size: 1rem;
                 }
                 @include smallMobile {
                   font-size: 0.8rem;
@@ -645,8 +630,7 @@ body {
               padding: 3rem;
               font-size: 1.2rem;
               @include mobile {
-                // font-size: 1rem;
-                font-size: 40%;
+                font-size: 1rem;
                 padding: 2rem 1rem;
               }
               @include smallMobile {
@@ -697,8 +681,7 @@ body {
           font-size: 5rem;
         }
         @include mobile {
-          //font-size: 2rem;
-          font-size: 40%;
+          font-size: 2rem;
         }
         @include smallMobile {
           font-size: 1.5rem;
@@ -733,8 +716,7 @@ body {
             font-size: 2rem;
           }
           @include mobile {
-            //font-size: 1.3rem;
-            font-size: 40%;
+            font-size: 1.3rem;
             padding-left: 0.5rem;
           }
           @include smallMobile {

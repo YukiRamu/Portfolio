@@ -58,7 +58,7 @@ body .wrap header .title h1 {
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap header .title h1 {
     font-size: 2.5rem;
-    margin-top: 40%;
+    margin-top: 2rem;
   }
 }
 
@@ -145,7 +145,7 @@ body .wrap header .title .btn {
     width: 30vw;
     display: block;
     margin: 2rem auto;
-    font-size: 40%;
+    font-size: 80%;
   }
 }
 
@@ -186,7 +186,7 @@ body .wrap .container h2 {
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .container h2 {
     padding-top: 7rem;
-    font-size: 40%;
+    font-size: 2rem;
   }
 }
 
@@ -221,7 +221,7 @@ body .wrap .about p {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .about p {
-    font-size: 40%;
+    font-size: 1.5rem;
   }
 }
 
@@ -256,7 +256,7 @@ body .wrap .about .educationBtn {
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .about .careerBtn,
   body .wrap .about .educationBtn {
-    font-size: 40%;
+    font-size: 1rem;
     width: 40vw;
     display: block;
     margin: 2rem auto;
@@ -322,7 +322,7 @@ body .wrap .modal .modalContents h3 {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .modal .modalContents h3 {
-    font-size: 40%;
+    font-size: 3rem;
   }
 }
 
@@ -350,7 +350,7 @@ body .wrap .modal .modalContents .modalPanel h4 {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .modal .modalContents .modalPanel h4 {
-    font-size: 40%;
+    font-size: 1.3rem;
   }
 }
 
@@ -360,7 +360,7 @@ body .wrap .modal .modalContents .modalPanel p {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .modal .modalContents .modalPanel p {
-    font-size: 40%;
+    font-size: 1.2rem;
   }
 }
 
@@ -370,7 +370,7 @@ body .wrap .modal .modalContents .modalPanel ul {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .modal .modalContents .modalPanel ul {
-    font-size: 40%;
+    font-size: 1.1rem;
     padding-left: 2rem;
   }
 }
@@ -384,7 +384,7 @@ body .wrap .modal .modalContents .modalPanel a {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .modal .modalContents .modalPanel a {
-    font-size: 40%;
+    font-size: 1.1rem;
   }
 }
 
@@ -422,7 +422,7 @@ body .wrap .modal .modalContents .closeBtn {
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .modal .modalContents .closeBtn {
     width: 20vw;
-    font-size: 40%;
+    font-size: 1.2rem;
   }
 }
 
@@ -539,7 +539,7 @@ body .wrap .skills .row .panel p {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .skills .row .panel p {
-    font-size: 40%;
+    font-size: 1.5rem;
   }
 }
 
@@ -574,7 +574,7 @@ body .wrap .skills .row .panel i {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .skills .row .panel i {
-    font-size: 40%;
+    font-size: 1.5em;
   }
 }
 
@@ -599,7 +599,7 @@ body .wrap .skills .row .panel ul {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .skills .row .panel ul {
-    font-size: 40%;
+    font-size: 1.3rem;
   }
 }
 
@@ -796,7 +796,7 @@ body .wrap .work .line .card .card_front .card_title h3 {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .work .line .card .card_front .card_title h3 {
-    font-size: 40%;
+    font-size: 1.3rem;
   }
 }
 
@@ -875,7 +875,7 @@ body .wrap .work .line .card .card_front .techStack li {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .work .line .card .card_front .techStack li {
-    font-size: 40%;
+    font-size: 1rem;
   }
 }
 
@@ -942,7 +942,7 @@ body .wrap .work .line .card .card_back p {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .work .line .card .card_back p {
-    font-size: 40%;
+    font-size: 1rem;
     padding: 2rem 1rem;
   }
 }
@@ -1011,7 +1011,7 @@ body .wrap footer h2 {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap footer h2 {
-    font-size: 40%;
+    font-size: 2rem;
   }
 }
 
@@ -1071,7 +1071,7 @@ body .wrap footer .links a {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap footer .links a {
-    font-size: 40%;
+    font-size: 1.3rem;
     padding-left: 0.5rem;
   }
 }
