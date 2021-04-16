@@ -57,7 +57,7 @@ body .wrap header .title h1 {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap header .title h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-top: 2rem;
   }
 }
@@ -80,7 +80,7 @@ body .wrap header .title p {
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap header .title p {
     margin-bottom: 6rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -186,7 +186,7 @@ body .wrap .container h2 {
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .container h2 {
     padding-top: 7rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -221,7 +221,7 @@ body .wrap .about p {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .about p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -322,7 +322,7 @@ body .wrap .modal .modalContents h3 {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .modal .modalContents h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -455,7 +455,7 @@ body .wrap .skills h2 {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .skills h2 {
-    padding-top: 2rem;
+    padding-top: 1.5rem;
   }
 }
 
@@ -539,7 +539,7 @@ body .wrap .skills .row .panel p {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .skills .row .panel p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -574,7 +574,7 @@ body .wrap .skills .row .panel i {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .skills .row .panel i {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 }
 
@@ -599,7 +599,7 @@ body .wrap .skills .row .panel ul {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .skills .row .panel ul {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -796,7 +796,7 @@ body .wrap .work .line .card .card_front .card_title h3 {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .work .line .card .card_front .card_title h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -1011,7 +1011,7 @@ body .wrap footer h2 {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap footer h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -1071,7 +1071,7 @@ body .wrap footer .links a {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap footer .links a {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding-left: 0.5rem;
   }
 }
