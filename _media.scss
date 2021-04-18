@@ -11,39 +11,9 @@ $smallMobile: 320px; //27.4%
 
 //#1 landscape handling
 
-@mixin smallMobile {
-  //@media (max-width: 320px)
-  @media (max-width: $smallMobile) {
-    @content; //added
-  }
-}
-
-@mixin mobile {
-  //@media (min-width: 320px) and (max-width: 480px)
-  @media (min-width: $smallMobile) and(max-width: $mobile) {
-    @content; //added - iphone 7 checked
-  }
-}
-
-@mixin smallTablet {
-   //@media (min-width: 480px) and (max-width: 520px)
-  @media (min-width: $mobile) and (max-width: $largeMobile) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  //@media (min-width: 480px) and (max-width: 769px)
-  @media (min-width: $largeMobile) and (max-width: $tablet) {
-    @content; // added
-  }
-}
-
-//#3 Additional breakpoint : 991.98px
-
-@mixin laptop {
-  //@media (min-width: 769px) and (max-width: 1024px)
-  @media (min-width: $tablet) and (max-width: $laptop) {
+@mixin largeDesktop {
+  //@media (min-width: 1280px)
+  @media (min-width: $desktop) {
     @content;
   }
 }
@@ -55,9 +25,39 @@ $smallMobile: 320px; //27.4%
   }
 }
 
-@mixin largeDesktop {
-  //@media (min-width: 1280px)
-  @media (min-width: $desktop) {
+@mixin laptop {
+  //@media (min-width: 769px) and (max-width: 1024px) //default
+  @media (min-width: $tablet) and (max-width: $laptop) {
+    @content;
+  }
+}
+
+//#3 Additional breakpoint : 991.98px
+
+@mixin tablet {
+  //@media (min-width: 520px) and (max-width: 769px) : added
+  @media (min-width: $largeMobile) and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin smallTablet {
+  //@media (min-width: 480px) and (max-width: 520px) : added
+  @media (min-width: $mobile) and (max-width: $largeMobile) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  //@media (min-width: 320px) and (max-width: 480px) : added - iphone 7 checked
+  @media (min-width: $smallMobile) and(max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin smallMobile {
+  //@media (max-width: 320px) : added
+  @media (max-width: $smallMobile) {
     @content;
   }
 }
