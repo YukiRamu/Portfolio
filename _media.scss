@@ -25,16 +25,16 @@ $smallMobile: 320px; //27.4%
   }
 }
 
-//#2 Additional breakpoint : "520", 560. 576?
-// @mixin largeMobile {
-//   @media (min-width: $mobile) and (max-width: $largeMobile) {
-//     @content;
-//   }
-// }
+@mixin smallTablet {
+   //@media (min-width: 480px) and (max-width: 520px)
+  @media (min-width: $mobile) and (max-width: $largeMobile) {
+    @content;
+  }
+}
 
 @mixin tablet {
   //@media (min-width: 480px) and (max-width: 769px)
-  @media (min-width: $mobile) and (max-width: $tablet) {
+  @media (min-width: $largeMobile) and (max-width: $tablet) {
     @content; // added
   }
 }

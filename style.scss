@@ -85,6 +85,9 @@ body {
           font-weight: bold;
           color: $color8;
           margin-bottom: 8rem;
+          @include smallTablet {
+            font-size: 2.5rem;
+          }
           @include mobile {
             margin-bottom: 7rem;
             font-size: 1.2rem;
@@ -100,6 +103,10 @@ body {
             border-radius: 10vw;
             content: "";
             background-image: linear-gradient(to right, $color9 0%, $color1 100%);
+            @include smallTablet {
+              top: 70%;
+              width: 60%;
+            }
             @include mobile {
               top: 45%;
               width: 50%;
@@ -121,10 +128,20 @@ body {
           box-shadow: 0 0.1em 0.2em $color1;
           color: $color6;
           border: 0.1rem solid $color1;
+          @include smallTablet {
+            width: 18vw;
+            font-size: 1.3rem;
+          }
           @include tablet {
             width: 18vw;
           }
           @include mobile {
+            width: 30vw;
+            display: block;
+            margin: 2rem auto;
+            font-size: 0.8rem;
+          }
+          @include smallMobile {
             width: 30vw;
             display: block;
             margin: 2rem auto;
@@ -172,10 +189,21 @@ body {
     .about {
       background: linear-gradient(to right bottom, $bgColor8, $bgColor1);
       clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 90%);
+      @include mobile {
+        clip-path: polygon(0 0, 100% 0%, 100% 95%, 0 95%);
+      }
+      @include smallMobile {
+        clip-path: polygon(0 0, 100% 0%, 100% 95%, 0 95%);
+      }
       p {
         font-size: 2rem;
         width: 70%;
         margin: 1rem auto;
+        @include smallTablet {
+          width: 90%;
+          font-size: 2rem;
+          margin: 4rem auto;
+        }
         @include tablet {
           width: 90%;
           margin: 6rem auto;
@@ -184,9 +212,13 @@ body {
         }
         @include mobile {
           font-size: 1.2rem;
+          width: 80%;
+          margin: 3rem auto;
         }
         @include smallMobile {
           font-size: 1rem;
+          width: 80%;
+          margin: 3rem auto;
         }
       }
       .careerBtn,
@@ -200,6 +232,9 @@ body {
         box-shadow: 0 0.2em 0.3em $color7;
         color: $color7;
         border: 0.1rem solid $color7;
+        @include smallTablet {
+          width: 50vw;
+        }
         @include tablet {
           width: 37vw;
           font-size: 2rem;
@@ -211,7 +246,10 @@ body {
           margin: 2rem auto;
         }
         @include smallMobile {
-          width: 45vw;
+          font-size: 1rem;
+          width: 70vw;
+          display: block;
+          margin: 2rem auto;
         }
         &:hover {
           transform: translateY(-0.2rem);
@@ -266,18 +304,31 @@ body {
             @include mobile {
               font-size: 1.2rem;
             }
+            @include smallMobile {
+              font-size: 1rem;
+            }
           }
           p {
             font-size: 1.3rem;
             @include mobile {
               font-size: 1.1rem;
             }
+            @include smallMobile {
+              font-size: 0.8rem;
+            }
           }
           ul {
             font-size: 1.2rem;
+            @include smallTablet {
+              padding-left: 2rem;
+            }
             @include mobile {
               font-size: 1rem;
               padding-left: 2rem;
+            }
+            @include smallMobile {
+              font-size: 0.8rem;
+              padding-left: 1rem;
             }
           }
           a {
@@ -287,6 +338,9 @@ body {
             font-size: 1.5rem;
             @include mobile {
               font-size: 1.1rem;
+            }
+            @include smallMobile {
+              font-size: 1rem;
             }
             i {
               margin-right: 0.5rem;
@@ -314,7 +368,14 @@ body {
           box-shadow: 0 0.2em 0.3em $color7;
           color: $color7;
           border: 0.1rem solid $color7;
+          @include smallTablet {
+            width: 25vw;
+          }
           @include mobile {
+            width: 25vw;
+            font-size: 1.2rem;
+          }
+          @include smallMobile {
             width: 25vw;
             font-size: 1.2rem;
           }
@@ -349,12 +410,22 @@ body {
         justify-content: center;
         font-size: 2rem;
         margin: auto;
+        @include smallTablet {
+          display: block;
+          transform: skewY(-5deg);
+          position: unset;
+        }
         @include tablet {
           display: block;
           transform: skewY(-5deg);
           position: unset;
         }
         @include mobile {
+          display: block;
+          transform: skewY(-5deg);
+          position: unset;
+        }
+        @include smallMobile {
           display: block;
           transform: skewY(-5deg);
           position: unset;
@@ -366,6 +437,12 @@ body {
           padding: 1rem;
           border-radius: 5%;
           transition: transform 0.3s;
+          @include smallTablet {
+            width: 60vw;
+            height: 20vh;
+            border-radius: 3vw;
+            margin: 2rem auto;
+          }
           @include tablet {
             width: 60vw;
             height: 20vh;
@@ -373,6 +450,12 @@ body {
             margin: 2rem auto;
           }
           @include mobile {
+            width: 70vw;
+            height: 20vh;
+            border-radius: 7vw;
+            margin: 2rem auto;
+          }
+          @include smallMobile {
             width: 70vw;
             height: 20vh;
             border-radius: 7vw;
@@ -396,6 +479,9 @@ body {
             height: 0.1rem;
             margin: 2rem auto;
             background-color: $color7;
+            @include smallTablet {
+              margin: 1rem auto;
+            }
             @include tablet {
               margin: 1rem auto;
             }
@@ -424,7 +510,7 @@ body {
               font-size: 0.8rem;
             }
             @include smallMobile {
-              font-size: 0.5rem;
+              font-size: 0.8rem;
             }
           }
           &:hover {
@@ -438,11 +524,19 @@ body {
     .work {
       background: linear-gradient(to right bottom, $bgColor1, $bgColor8);
       clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0 100%);
+      @include smallTablet {
+        clip-path: polygon(0 5%, 100% 5%, 100% 100%, 0 100%);
+        height: unset;
+      }
       @include tablet {
         height: unset;
       }
       @include mobile {
-        clip-path: polygon(0 5%, 100% 5%, 100% 100%, 0 100%);
+        clip-path: polygon(0 3%, 100% 3%, 100% 100%, 0 100%);
+        height: unset;
+      }
+      @include smallMobile {
+        clip-path: polygon(0 3%, 100% 3%, 100% 100%, 0 100%);
         height: unset;
       }
       h2 {
@@ -453,12 +547,22 @@ body {
         @include mobile {
           padding-top: 5rem;
         }
+        @include smallMobile {
+          padding-top: 5rem;
+        }
       }
       .line {
         @include centering;
         display: flex;
         justify-content: center;
         margin-top: 3rem;
+        @include smallTablet {
+          display: block;
+          position: unset;
+          padding: 1rem 0;
+          transform: unset;
+          margin-top: 0;
+        }
         @include tablet {
           display: block;
           position: unset;
@@ -467,6 +571,13 @@ body {
           margin-top: 0;
         }
         @include mobile {
+          display: block;
+          position: unset;
+          padding: 1rem 0;
+          transform: unset;
+          margin-top: 0;
+        }
+        @include smallMobile {
           display: block;
           position: unset;
           padding: 1rem 0;
@@ -481,6 +592,11 @@ body {
           transition: 0.5s;
           transform-style: preserve-3d;
           perspective: 600px;
+          @include smallTablet {
+            width: 70vw;
+            min-height: 35vh;
+            margin: 1rem auto 2rem auto;
+          }
           @include tablet {
             width: 70vw;
             min-height: 25vh;
@@ -489,6 +605,11 @@ body {
           @include mobile {
             width: 70vw;
             min-height: 50vh;
+            margin: 1rem auto 2rem auto;
+          }
+          @include smallMobile {
+            width: 70vw;
+            min-height: 40vh;
             margin: 1rem auto 2rem auto;
           }
           &:hover .card_front {
@@ -510,10 +631,16 @@ body {
             box-shadow: 0.5em 0.7em 1em $color6;
             margin: 1rem;
             border-radius: 3vw;
+            @include smallTablet {
+              margin: 0;
+            }
             @include tablet {
               margin: 0;
             }
             @include mobile {
+              margin: 0;
+            }
+            @include smallMobile {
               margin: 0;
             }
             .card_title {
@@ -525,7 +652,7 @@ body {
                 padding: 2.5rem 1.5rem;
               }
               @include smallMobile {
-                padding: 2rem 1.5rem;
+                padding: 2rem 1rem;
               }
               h3 {
                 padding: 0.5rem;
@@ -569,14 +696,18 @@ body {
               margin: auto;
               padding: 1.5rem 2rem 2rem;
               width: 60%;
+              @include smallTablet {
+                padding: 0 2rem 2rem;
+              }
               @include tablet {
-                width: 75%;
+                width: 100%;
               }
               @include mobile {
+                width: 100%;
                 padding: 0 1rem;
               }
               @include smallMobile {
-                width: 50%;
+                width: 100%;
               }
               li {
                 border-bottom: 0.1rem groove $color6;
@@ -593,7 +724,7 @@ body {
                   border-bottom: none;
                 }
                 @include smallMobile {
-                  font-size: 0.5rem;
+                  font-size: 0.8rem;
                   border-bottom: none;
                 }
               }
@@ -608,6 +739,10 @@ body {
             border-radius: 3vw;
             transform: rotateX(180deg); //to show the back side when flipped
             transition: 0.5s;
+            @include smallTablet {
+              margin: 0;
+              min-height: 35vh;
+            }
             @include tablet {
               margin: 0;
               min-height: 25vh;
@@ -617,7 +752,8 @@ body {
               min-height: 50vh;
             }
             @include smallMobile {
-              min-height: 50vh;
+              margin: 0;
+              min-height: 40vh;
             }
             &.one_back {
               background: linear-gradient(#fff8bcfd, #beecaf);
@@ -633,12 +769,16 @@ body {
               text-align: justify;
               padding: 3rem;
               font-size: 1.2rem;
+              @include smallTablet {
+                padding: 2rem;
+              }
               @include mobile {
                 font-size: 1rem;
                 padding: 2rem 1rem;
               }
               @include smallMobile {
-                padding: 1rem 1rem;
+                font-size: 0.8rem;
+                padding: 1.5rem 1rem;
               }
             }
             a {
@@ -704,7 +844,7 @@ body {
         }
         @include smallMobile {
           display: block;
-          font-size: 0.5rem;
+          font-size: 0.8rem;
         }
         i {
           padding: 0 0.5rem;
@@ -730,6 +870,8 @@ body {
           }
           @include smallMobile {
             display: block;
+            font-size: 1rem;
+            padding-left: 0.5rem;
           }
           i {
             margin-right: 0.5rem;
