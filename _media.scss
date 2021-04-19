@@ -4,6 +4,7 @@
 
 $desktop: 1280px; // 109.9%
 $laptop: 1024px; //87.9%
+$largeTablet: 960px;
 $tablet: 769px; // 66%
 $largeMobile: 520px; //44.6%
 $mobile: 480px; //41.2%
@@ -33,6 +34,12 @@ $smallMobile: 320px; //27.4%
 }
 
 //#3 Additional breakpoint : 991.98px
+@mixin largeTablet {
+  //@media (min-width: 769px) and (max-width: 960px)
+  @media (min-width: $tablet) and (max-width: $largeTablet) {
+    @content;
+  }
+}
 
 @mixin tablet {
   //@media (min-width: 520px) and (max-width: 769px) : added

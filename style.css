@@ -306,7 +306,7 @@ body .wrap .about p {
 
 body .wrap .about .careerBtn,
 body .wrap .about .educationBtn {
-  width: 20vw;
+  width: 50vw;
   font-size: 1.5rem;
   border-radius: 50vw;
   padding: 0.5rem 0.5rem;
@@ -321,7 +321,7 @@ body .wrap .about .educationBtn {
 @media (min-width: 520px) and (max-width: 769px) {
   body .wrap .about .careerBtn,
   body .wrap .about .educationBtn {
-    width: 37vw;
+    width: 40vw;
   }
 }
 
@@ -633,7 +633,7 @@ body .wrap .skills .row {
 }
 
 body .wrap .skills .row .panel {
-  width: 20vw;
+  width: 25vw;
   background-color: #f3f7fcae;
   margin: 2rem;
   padding: 1rem;
@@ -812,7 +812,7 @@ body .wrap .work {
 }
 
 body .wrap .work h2 {
-  padding-top: 6rem;
+  padding-top: 6.5rem;
 }
 
 @media (min-width: 520px) and (max-width: 769px) {
@@ -823,7 +823,7 @@ body .wrap .work h2 {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body .wrap .work h2 {
-    padding-top: 5rem;
+    padding-top: 6rem;
   }
 }
 
@@ -911,7 +911,7 @@ body .wrap .work .line .card {
 @media (min-width: 520px) and (max-width: 769px) {
   body .wrap .work .line .card {
     width: 70vw;
-    min-height: 25vh;
+    min-height: 30vh;
     margin: 1rem auto 2rem auto;
   }
 }
@@ -1142,7 +1142,7 @@ body .wrap .work .line .card .card_back {
 @media (min-width: 520px) and (max-width: 769px) {
   body .wrap .work .line .card .card_back {
     margin: 0;
-    min-height: 25vh;
+    min-height: 30vh;
   }
 }
 
