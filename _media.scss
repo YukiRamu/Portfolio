@@ -27,8 +27,8 @@ $smallMobile: 320px; //27.4%
 }
 
 @mixin laptop {
-  //@media (min-width: 769px) and (max-width: 1024px) //default
-  @media (min-width: $tablet) and (max-width: $laptop) {
+  //@media (min-width: 960px) and (max-width: 1024px) //default
+  @media (min-width: $largeTablet) and (max-width: $laptop) {
     @content;
   }
 }

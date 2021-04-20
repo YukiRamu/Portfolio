@@ -130,6 +130,12 @@ body .wrap header .title p:after {
   background-image: linear-gradient(to right, #fa709a 0%, #f5e63e 100%);
 }
 
+@media (min-width: 769px) and (max-width: 960px) {
+  body .wrap header .title p:after {
+    width: 50%;
+  }
+}
+
 @media (min-width: 480px) and (max-width: 520px) {
   body .wrap header .title p:after {
     top: 70%;
@@ -163,6 +169,12 @@ body .wrap header .title .btn {
           box-shadow: 0 0.1em 0.2em #f5e63e;
   color: #434344;
   border: 0.1rem solid #f5e63e;
+}
+
+@media (min-width: 769px) and (max-width: 960px) {
+  body .wrap header .title .btn {
+    width: 20vw;
+  }
 }
 
 @media (min-width: 520px) and (max-width: 769px) {
@@ -212,7 +224,7 @@ body .wrap header .title .btn:active {
 body .wrap .container {
   position: relative;
   width: 100%;
-  height: 95vh;
+  min-height: 95vh;
   text-align: center;
   color: #f3f7fc;
 }
@@ -596,6 +608,15 @@ body .wrap .skills .row {
   margin: auto;
 }
 
+@media (min-width: 769px) and (max-width: 960px) {
+  body .wrap .skills .row {
+    display: block;
+    -webkit-transform: skewY(-5deg);
+            transform: skewY(-5deg);
+    position: unset;
+  }
+}
+
 @media (min-width: 520px) and (max-width: 769px) {
   body .wrap .skills .row {
     display: block;
@@ -642,6 +663,15 @@ body .wrap .skills .row .panel {
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+@media (min-width: 769px) and (max-width: 960px) {
+  body .wrap .skills .row .panel {
+    width: 60vw;
+    height: 20vh;
+    border-radius: 3vw;
+    margin: 2rem auto;
+  }
 }
 
 @media (min-width: 520px) and (max-width: 769px) {
@@ -781,6 +811,14 @@ body .wrap .work {
           clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0 100%);
 }
 
+@media (min-width: 769px) and (max-width: 960px) {
+  body .wrap .work {
+    -webkit-clip-path: polygon(0 5%, 100% 5%, 100% 100%, 0 100%);
+            clip-path: polygon(0 5%, 100% 5%, 100% 100%, 0 100%);
+    height: unset;
+  }
+}
+
 @media (min-width: 520px) and (max-width: 769px) {
   body .wrap .work {
     height: unset;
@@ -849,6 +887,17 @@ body .wrap .work .line {
   margin-top: 3rem;
 }
 
+@media (min-width: 769px) and (max-width: 960px) {
+  body .wrap .work .line {
+    display: block;
+    position: unset;
+    padding: 1rem 0;
+    -webkit-transform: unset;
+            transform: unset;
+    margin-top: 0;
+  }
+}
+
 @media (min-width: 520px) and (max-width: 769px) {
   body .wrap .work .line {
     display: block;
@@ -906,6 +955,14 @@ body .wrap .work .line .card {
           perspective: 600px;
   /* card front */
   /* card back */
+}
+
+@media (min-width: 769px) and (max-width: 960px) {
+  body .wrap .work .line .card {
+    width: 60vw;
+    min-height: 30vh;
+    margin: 1rem auto 2rem auto;
+  }
 }
 
 @media (min-width: 520px) and (max-width: 769px) {
@@ -966,6 +1023,12 @@ body .wrap .work .line .card .card_front {
           box-shadow: 0.5em 0.7em 1em #434344;
   margin: 1rem;
   border-radius: 3vw;
+}
+
+@media (min-width: 769px) and (max-width: 960px) {
+  body .wrap .work .line .card .card_front {
+    margin: 0;
+  }
 }
 
 @media (min-width: 520px) and (max-width: 769px) {
@@ -1072,6 +1135,12 @@ body .wrap .work .line .card .card_front .techStack {
   width: 60%;
 }
 
+@media (min-width: 769px) and (max-width: 960px) {
+  body .wrap .work .line .card .card_front .techStack {
+    width: 100%;
+  }
+}
+
 @media (min-width: 520px) and (max-width: 769px) {
   body .wrap .work .line .card .card_front .techStack {
     width: 100%;
@@ -1102,6 +1171,14 @@ body .wrap .work .line .card .card_front .techStack li {
   font-size: 1.2rem;
   padding: 0.5rem;
   color: #434344;
+}
+
+@media (min-width: 769px) and (max-width: 960px) {
+  body .wrap .work .line .card .card_front .techStack li {
+    display: inline-block;
+    font-size: 1.5rem;
+    border-bottom: none;
+  }
 }
 
 @media (min-width: 520px) and (max-width: 769px) {
@@ -1137,6 +1214,13 @@ body .wrap .work .line .card .card_back {
           transform: rotateX(180deg);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+@media (min-width: 769px) and (max-width: 960px) {
+  body .wrap .work .line .card .card_back {
+    margin: 0;
+    min-height: 30vh;
+  }
 }
 
 @media (min-width: 520px) and (max-width: 769px) {
