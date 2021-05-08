@@ -41,7 +41,11 @@ body {
   overflow-x: hidden;
   //background-color: $color1;
   // background:linear-gradient($bgColor1), url(https://i.gifer.com/HKVW.gif);
-  background: url(https://i.gifer.com/HKVW.gif);
+  // background: url(https://i.gifer.com/HKVW.gif);
+  background: url(https://i.gifer.com/IrF.gif) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   .wrap {
     overflow: hidden;
     /* header */
@@ -722,7 +726,7 @@ body {
             }
             //card 3
             .three {
-              background-image: linear-gradient($bgColor3), url(./img/img3.jpg);
+              background-image: linear-gradient($bgColor3), url(./img/bg5.jpg);
               h3 span {
                 color: $color3;
               }

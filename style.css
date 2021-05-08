@@ -8,7 +8,10 @@ body {
   padding: 2rem;
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
-  background: url(https://i.gifer.com/HKVW.gif);
+  background: url(https://i.gifer.com/IrF.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 body .wrap {
@@ -1120,8 +1123,8 @@ body .wrap .work .line .card .card_front .two h3 span {
 }
 
 body .wrap .work .line .card .card_front .three {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#eeae90ca)), url(./img/img3.jpg);
-  background-image: linear-gradient(#eeae90ca), url(./img/img3.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eeae90ca)), url(./img/bg5.jpg);
+  background-image: linear-gradient(#eeae90ca), url(./img/bg5.jpg);
 }
 
 body .wrap .work .line .card .card_front .three h3 span {
